@@ -11,105 +11,113 @@
       <link rel="shortcut icon" type="image/png" href="img/favicon.png">
       <title></title>
       <style>
-      wrap {
-        max-width: 1170px;
-        margin: 0 auto; }
+      .wrap {
+      max-width: 1170px;
+      margin: 0 auto; }
 
       .breadcrumb {
-        margin-top: 49px;
-        }
+      margin-top: 49px; }
       .breadcrumb li {
-        display: inline-block; }
+      display: inline-block; }
       .breadcrumb__link {
-        font-style: none;
-        color: #171717;
-        font-family: "MuseoSansCyrl300";
-        letter-spacing: 0.35px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        cursor: pointer; }
+      font-style: none;
+      color: #171717;
+      font-family: "MuseoSansCyrl300";
+      letter-spacing: 0.35px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      cursor: pointer; }
       .breadcrumb__link:last-child {
-        color: #414141;
-        font-family: "MuseoSansCyrl500";
-        font-size: 14px;
-        font-weight: 400; }
+      color: #414141;
+      font-family: "MuseoSansCyrl500";
+      font-size: 14px;
+      font-weight: 400; }
 
       .page-question-menu {
-        width: 100wv;
-        height: 233px;
-        background-color: #1f1f1f; }
+      width: 100wv;
+      height: 233px;
+      background-color: #1f1f1f; }
 
       .questions-header {
-        max-width: 540px;
-        display: block;
-        position: relative;
-        margin: 55px auto 68px; }
-        @media only screen and (max-width: 1200px) {
+      max-width: 540px;
+      display: block;
+      position: relative;
+      margin: 55px auto 68px; }
+      @media only screen and (max-width: 1200px) {
       .questions-header {
-        margin-top: 30px; } }
-         @media only screen and (max-width: 1200px) {
+      margin-top: 30px; } }
+      @media only screen and (max-width: 1200px) {
       .questions-header {
-        margin-top: 30px;
-        margin-bottom: 43px;
-        padding-top: 0; } }
+      margin-top: 30px;
+      margin-bottom: 43px;
+      padding-top: 0; } }
+      @media only screen and (max-width: 768px) {
+      .questions-header {
+      margin-bottom: 15px; } }
 
       .questions-btn {
-        color: #171717;
-        display: block;
-        margin: 19px auto 150px; }
-        @media only screen and (max-width: 1200px) {
-          .questions-btn {
-            margin: 19px auto 80px; } }
+      color: #171717;
+      display: block;
+      margin: 19px auto 150px; }
+      @media only screen and (max-width: 1200px) {
+      .questions-btn {
+      margin: 19px auto 80px; } }
 
       .questions-serch {
-        width: 123px; }
+      width: 123px; }
 
       .questions .accent-header__doble:before {
-        left: 31%; }
+      left: 31%; }
 
       @media only screen and (max-width: 1200px) {
-        .questions-breadcrumb {
-          margin-top: 30px;
-          padding-left: 50px; } }
+      .questions-breadcrumb {
+      margin-top: 30px;
+      padding-left: 50px; } }
 
       @media only screen and (max-width: 900px) {
-        .questions-breadcrumb {
-          margin-top: 30px;
-          padding-left: 20px; } }
+      .questions-breadcrumb {
+      margin-top: 30px;
+      padding-left: 20px; } }
 
       .page-question-menu-box {
-        width: 79%; }
+      width: 79%; }
 
-/*------------ questions-info-box -------------*/
-.questions-info-box {
-  display: flex;
-  padding: 0 80px 100px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.4px; }
-  @media only screen and (max-width: 768px) {
-    .questions-info-box {
-      display: block;
+      /*------------ questions-info-box -------------*/
+      .questions-info-box {
+      display: flex;
+      padding: 0 80px 100px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+      flex-direction: row; }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box {
+      width: 100%;
+      flex-direction: column-reverse;
       padding: 0 20px; } }
-  .questions-info-box__item {
-    max-width: 500px; }
-    @media only screen and (max-width: 768px) {
       .questions-info-box__item {
-        max-width: 100%; } }
-    .questions-info-box__item--left {
+      max-width: 500px; }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box__item {
+      width: 100%; } }
+      .questions-info-box__item--left {
       padding-right: 26px;
       color: #414141;
       font-family: "MuseoSansCyrl500";
-      font-size: 16px; }
+      font-size: 16px;
+      border-right: 2px solid rgba(0, 0, 0, 0.15); }
       @media only screen and (max-width: 1200px) {
-        .questions-info-box__item--left {
-          padding-right: 15px; } }
+      .questions-info-box__item--left {
+      padding-right: 15px; } }
       @media only screen and (max-width: 768px) {
-        .questions-info-box__item--left {
-          padding: 0 20px;
-          margin-top: -20px; } }
-    .questions-info-box__item--right {
+      .questions-info-box__item--left {
+      min-width: 100%;
+      padding: 0;
+      margin-top: -20px;
+      border-right: none;
+      margin-bottom: 50px; } }
+      .questions-info-box__item--right {
       padding-left: 73px;
       color: #171717;
       font-family: "MuseoSansCyrl300";
@@ -117,158 +125,95 @@
       line-height: 23px;
       letter-spacing: 0.35px; }
       @media only screen and (max-width: 1200px) {
-        .questions-info-box__item--right {
-          padding-left: 8px; } }
+      .questions-info-box__item--right {
+      padding-left: 20px; } }
       @media only screen and (max-width: 768px) {
-        .questions-info-box__item--right {
-          padding: 20px 20px;
-          width: 100%; } }
-    .questions-info-box__item--quote {
+      .questions-info-box__item--right {
+      padding: 0;
+      min-width: 100%;
+      padding-bottom: 20px;
+      margin-right: 0;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.15); } }
+      .questions-info-box__item--quote {
       position: relative;
       margin: 0;
       color: #000000;
       font-family: "MuseoSansCyrl900";
       font-size: 16px; }
+      .questions-info-box__item--quote.quote-toggle-2 {
+      display: none; }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box__item--quote.quote-toggle-2 {
+      display: inline-block;
+      margin-bottom: 20px; }
+      .questions-info-box__item--quote.quote-toggle-1 {
+      display: none; } }
       .questions-info-box__item--quote:before {
-        content: " ";
-        width: 3px;
-        height: 100%;
-        background-color: #ff8a01;
-        display: block;
-        position: absolute;
-        left: -30px; }
-      @media only screen and (max-width: 1200px) {
-         .questions-info-box__item--quote {
-          display: none;} }
-    .questions-info-box__item__text {
+      content: " ";
+      width: 3px;
+      height: 100%;
+      background-color: #ff8a01;
+      display: block;
+      position: absolute;
+      left: -30px; }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box__item--quote:before {
+      display: none; } }
+      .questions-info-box__item__text {
       padding-top: 48px; }
       @media only screen and (max-width: 768px) {
-        .questions-info-box__item__text {
-          padding-top: 0; } }
+      .questions-info-box__item__text {
+      padding-top: 0; }
+      .questions-info-box__item__text--border-bottom {
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.15); } }
       .questions-info-box__item__text-right-column {
-        padding-top: 0;
-        padding-bottom: 0; }
-  .questions-info-box__ask {
-    display: block;
-    max-width: 310px;
-    margin: 0 auto;
-    text-align: center;
-    color: #171717;
-    font-family: "MuseoSansCyrl300";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.35px; }
-    @media only screen and (max-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0; }
+      .questions-info-box__item__text--border-bottom {
+      padding-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0); }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box__item__text--border-bottom {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.15); } }
       .questions-info-box__ask {
-        max-width: 245px; } }
+      display: block;
+      max-width: 310px;
+      margin: 0 auto;
+      text-align: center;
+      color: #171717;
+      font-family: "MuseoSansCyrl300";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.35px; }
+      @media only screen and (max-width: 768px) {
+      .questions-info-box__ask {
+      max-width: 245px; } }
 
-.vertical-line {
-  width: 2px;
-  background-color: #000000;
-  opacity: 0.15;
-  display: block; }
+      .vertical-line1 {
+      width: 2px;
+      background-color: #000000;
+      opacity: 0.15;
+      display: block; }
 
-.horizontal-line {
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-top: 18px;
-  margin-bottom: 30px;
-  display: none; }
-  @media only screen and (max-width: 768px) {
-    .horizontal-line {
+      .horizontal-line1 {
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+      opacity: 0.15;
+      margin-top: 18px;
+      margin-bottom: 30px;
+      display: none; }
+      @media only screen and (max-width: 768px) {
+      .horizontal-line1 {
       display: block;
       margin-top: 11px;
       margin-bottom: 30px; } }
-      /* .wrap{
-         max-width: 1170px;
-         margin: 0 auto;
-      } 
       
-         .breadcrumb {
-        margin-top: 49px; }
-        .breadcrumb li {
-          display: inline-block; }
-        .breadcrumb__link {
-          font-style: none;
-          color: #171717;
-          font-family: "MuseoSansCyrl300";
-          letter-spacing: 0.35px;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 24px;
-          cursor: pointer; }
-          .breadcrumb__link:last-child {
-            color: #414141;
-            font-family: "MuseoSansCyrl500";
-            font-size: 14px;
-            font-weight: 400; }
-      
-         .page-question-menu {
-           width: 100wv;
-           height: 233px;
-           background-color: #1f1f1f; }
-      
-         .questions-header {
-           max-width: 540px;
-           display: block;
-           position: relative;
-           margin: 55px auto 68px; }
-      
-         .questions-wrap {
-           width: 1170px;
-           margin: 0 auto; }
-      
-         .questions-serch {
-           width: 123px; }
-      
-         .questions .accent-header__doble:before {
-           left: 31%; }
-      
-         .page-question-menu-box {
-           width: 79%; }
-      
-           .questions-info-box {
-           display: flex;
-           padding: 0 80px 100px;
-           font-weight: 400;
-           line-height: 24px;
-           letter-spacing: 0.4px; }
-           .questions-info-box__item {
-             width: 500px; }
-          .questions-info-box__item--left {
-            padding-right: 26px;
-            color: #414141;
-            font-family: "MuseoSansCyrl500";
-            font-size: 16px; }
-          .questions-info-box__item--right {
-            padding-left: 73px;
-            color: #171717;
-            font-family: "MuseoSansCyrl300";
-            font-size: 14px;
-            line-height: 23px;
-            letter-spacing: 0.35px; }
-          .questions-info-box__item--quote {
-            position: relative;
-            margin: 0;
-            color: #000000;
-            font-family: "MuseoSansCyrl900";
-            font-size: 16px; }
-         .questions-info-box__item--quote:before {
-           content: " ";
-           width: 3px;
-           height: 100%;
-           background-color: #ff8a01;
-           display: block;
-           position: absolute;
-           left: -30px; }
-      
-         .vertical-line {
-           width: 1px;
-           background-color: #000000;
-           opacity: 0.15; } */
       </style>
 
    </head>
@@ -372,26 +317,23 @@
 
             </ul>
 
-            <p class="accent-header accent-header__doble questions-header"><span> бестселлеры</span> бестселлеры</p>
+            <p class="accent-header accent-header__doble questions-header"><span>Вопрос/ответ</span>Вопрос/ответ</p>
          
             <div class="questions-info-box">
                <div class="questions-info-box__item questions-info-box__item--left">
-                  <blockquote class="questions-info-box__item--quote">
+                  <blockquote class="questions-info-box__item--quote quote-toggle-1">
                      Умножение двух векторов (скалярное), общеизвестно, традиционно привлекает нормальный предел функции?
                   </blockquote>
-                  <div class="horizontal-line"></div>
-                  <p class="questions-info-box__item__text">Число е, очевидно, нетривиально?</p>
-                  <div class="horizontal-line"></div>
-                  <p class="questions-info-box__item__text">Hатpиевые атомы предварительно были замечены близко с центром других комет, но весеннее равноденствие ненаблюдаемо? </p>
-                  <div class="horizontal-line"></div> 
-                  <p class="questions-info-box__item__text">Прямое восхождение последовательно. Спектральная картина вращает случайный метеорный дождь? Межзвездная матеpия параллельна?</p>
-                  <div class="horizontal-line"></div>   
-                  <p class="questions-info-box__item__text">Юпитер представляет собой астероидный аргумент перигелия?</p>
-                  <div class="horizontal-line"></div>
+                  <p class="questions-info-box__item__text questions-info-box__item__text--border-bottom">Число е, очевидно, нетривиально?</p>
+                  <p class="questions-info-box__item__text questions-info-box__item__text--border-bottom">Hатpиевые атомы предварительно были замечены близко с центром других комет, но весеннее равноденствие ненаблюдаемо? </p> 
+                  <p class="questions-info-box__item__text questions-info-box__item__text--border-bottom">Прямое восхождение последовательно. Спектральная картина вращает случайный метеорный дождь? Межзвездная матеpия параллельна?</p>   
+                  <p class="questions-info-box__item__text questions-info-box__item__text--border-bottom">Юпитер представляет собой астероидный аргумент перигелия?</p>
                </div>
-               <div class="vertical-line"></div>
                <div class="questions-info-box__item questions-info-box__item--right">
                   <p class="questions-info-box__item__text questions-info-box__item__text-right-column">
+                    <blockquote class="questions-info-box__item--quote quote-toggle-2">
+                       Умножение двух векторов (скалярное), общеизвестно, традиционно привлекает нормальный предел функции?
+                    </blockquote>
                      Млечный Путь дает далекий дип-скай объект, учитывая, что в одном парсеке 3,26 световых года. Это можно записать следующим образом: V = 29.8 * sqrt(2/r – 1/a) км/сек, где возмущающий фактор однородно колеблет близкий радиант. Многие кометы имеют два хвоста, однако огpомная пылевая кома традиционно меняет межпланетный параллакс. Параллакс выслеживает параллакс. Млечный Путь, на первый взгляд, выслеживает метеорный дождь. <br><br>Приливное трение, а там действительно могли быть видны звезды, о чем свидетельствует Фукидид выбирает первоначальный терминатор (датировка приведена по Петавиусу, Цеху, Хайсу). Радиант вызывает астероидный тропический год. Засветка неба дает метеорный дождь. Юлианская дата параллельна. Реликтовый ледник выбирает центральный афелий . Движение, это удалось установить по характеру спектра, вызывает близкий эксцентриситет.
                   </p>
                </div>
