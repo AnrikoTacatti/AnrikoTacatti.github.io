@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="favicon.isco" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+      <title></title>
+      <style>
+         .text-left {
+              text-align: left; }
+
+        .breadcrumb {
+             margin-top: 49px;}
+        .breadcrumb li {
+            display: inline-block;
+         }
+         .breadcrumb__link {
+            font-style: none;
+            color: #171717;
+            font-family: "MuseoSansCyrl300";
+            letter-spacing: 0.35px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            cursor: pointer;}
+            
+          .breadcrumb:last-child {
+             color: #414141;
+             font-family: "MuseoSansCyrl500";
+             font-size: 14px;
+             font-weight: 400;
+            
+          }
+
+
+        .portfolio-wrap {
+          max-width: 1170px;
+          margin: 0 auto;
+          text-align: center; }
+
+        .portfolio__portfolio-box {
+          display: flex;
+          align-items: center;
+          align-content: flex-start;
+          justify-content: space-between;
+          margin-top: 43px;
+          flex-wrap: wrap; }
+        .portfolio__portfolio-box__item {
+          width: calc(100% / 2 - 10px);
+          position: relative;
+          display: block;
+          margin-top: 20px;
+          overflow: hidden;
+          transition: all .3s; }
+          @media only screen and (min-width: 769px) {
+            .portfolio__portfolio-box__item:nth-child(odd) {
+              margin-right: 0px; } }
+          @media only screen and (max-width: 768px) {
+            .portfolio__portfolio-box__item {
+              width: 100%;
+              margin-bottom: 30px; } }
+      .portfolio__portfolio-box__item__text {
+        font-family: "MuseoSansCyrl500";
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+        padding: 30px;
+        text-align: left;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: -125px;
+        transition: all .6s; }
+        @media only screen and (max-width: 1200px) {
+          .portfolio__portfolio-box__item__text {
+            font-size: 20px;
+            padding: 20px;
+            padding-left: 30px;
+            bottom: 0; } }
+        @media only screen and (max-width: 400px) {
+          .portfolio__portfolio-box__item__text {
+            height: 140px;
+            padding: 20px;
+            padding-left: 30px;
+            font-size: 18px;
+            letter-spacing: 0.45px; } }
+        @media only screen and (max-width: 320px) {
+          .portfolio__portfolio-box__item__text {
+             } }
+
+      .portfolio__portfolio-box__item:hover .portfolio__portfolio-box__item__text {
+        bottom: 0; }
+      .portfolio__portfolio-box__item__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer; }
+      .portfolio__portfolio-box__item__picture {
+        width: 100%; }
+      @media only screen and (max-width: 414px) {
+          .portfolio__portfolio-box__item__picture {
+            height: 400px; } }
+      .portfolio__portfolio-box__item__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 35px);
+        height: calc(100% - 35px);
+        border: 3px solid transparent;
+        overflow: hidden;
+        transition: all .6s; }
+        @media only screen and (max-width: 1200px) {
+          .portfolio__portfolio-box__item__title {
+            border: 3px solid #d37200; } }
+        @media only screen and (max-width: 440px) {
+          .portfolio__portfolio-box__item__title {
+            width: calc(100% - 14px);
+            height: calc(100% - 32px); } }
+        .portfolio__portfolio-box__item__title:hover {
+          border: 3px solid #d37200; }
+
+      @media only screen and (max-width: 1200px) {
+        .portfolio {
+          padding-left: 20px;
+          padding-right: 20px; } }
+
+      .portfolio-btn {
+        display: block;
+        margin: 70px auto 150px; }
+       @media only screen and (max-width: 1200px) {
+          .portfolio-btn {
+            margin: 60px auto 100px; } }
+      @media only screen and (max-width: 900px) {
+          .portfolio-btn {
+            margin: 50px auto 80px; } }
+      @media only screen and (max-width: 440px) {
+          .portfolio-btn {
+            margin: 30px auto 40px; } }
+
+      .portfolio-icon {
+        display: inline-block;
+        transform: translate(-5px, 7px); }
+      </style>
+   </head>
+
+   <body id="body">
+
+    <section class="menu menu-second">
+        <div class="menu__menu-box">
+            <div class="menu__menu-box__box-logo-serch">
+                <div class="menu__menu-box__box-logo-serch__logo-menu j-open-scroll-menu">
+                    <div class="hamburger-icon  ">
+                        <div class="top"></div>
+                        <div class="middle"></div>
+                        <div class="middle-second"></div>
+                        <div class="bottom"></div>
+                    </div> 
+                    <span class="menu__menu-box__box-logo-serch__logo-menu__hamburger-icon-text">Меню</span>
+                     
+                    </div>
+                <div class="menu__menu-box__box-logo-serch__search-box j-open-search-form">
+                    <i class="search-ico" ></i> 
+                 <span class="menu__menu-box__box-logo-serch__search-text">Поиск</span> </div>
+            </div>
+          
+            <div class="logo">
+                <a href="#home"><img src="img/logo.png" alt=""> </a>
+            </div>
+          
+            <div class="menu__menu-box__contacts">
+               <a href="tel:+7 (978) 127-23-33" class="tel">+7 (978) 127-23-33</a>
+                <button class="call__back-btn j-btn-form-сallback">Заказать звонок</button>
+            </div>
+            <div class="menu-user-buttons menu__menu-box__menu-user-buttons">
+                <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i><span>03</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"></i><span>02</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i><span>01</span></a>
+            </div>
+            
+        </div>
+          <ul class="menu__menu-box__scroll-menu j-menu__menu-box__scroll-menu">
+               
+                <li class="menu__menu-box__scroll-menu__list__item">
+                    <button title="Close (Esc)" type="button" class="close j-close">×</button>
+                </li>
+                
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#home"> Главная</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item hamburger-icon-ico"><a class="" href="#">Каталог </a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">Доставка и оплата</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item active"><a class="" href="#">О компании</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">Наши работы</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#question">Вопрос/Ответ</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">новости</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">отзывы</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#contacts">Контакты</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item">
+                <div class="menu-user-buttons">
+              
+                        <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i> Корзина <span>01</span></a>
+                        <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"> </i> Отложенные <span>02</span></a>
+                        <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i> Сравнение <span>03</span></a>
+                 </div>
+               </li>
+                <li class="menu__menu-box__scroll-menu__list__item">
+                   <a href="tel:+7 (978) 127-23-33" class=" tel">+7 (978) 127-23-33</a>
+                   <a href="viber://add?number=7 (978) 127-23-33" class=" tel"><i class="viber-ico"></i></a> 
+                   <a href="whatsapp://send?phone=+7 (978) 127-23-33" class=" tel"><i class="whatsapp-ico"></i></a>
+                   <br> <a href="mailto:domkamin@gmail.com" class="email">domkamin@gmail.com</a>
+                   <div class="box-soc-icons"> 
+                       <a href=""><i class="vk-ico"></i></a> 
+                       <a href=""><i class="insta-ico"></i></a> 
+                       <a href=""><i class="fb-ico"></i></a> 
+                       <a href=""><i class="youtube-ico"></i></a> 
+                       <a href=""><i class="ok-ico"></i></a> 
+                   </div>
+                </li>
+            </ul>
+        
+          <form class="search-form"> 
+              
+                <label for="" class="search-form__label-search">
+                    <input type="text" class="search-form__input-search" placeholder="найти товар">
+                    <button class="btn btn-search">Найти</button>
+                    <button title="Close (Esc)" type="button" class="form-close j-close">×</button>
+                </label>
+            </form>
+         <div class="menu-user-buttons ">
+              
+                <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i><span>01</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"></i><span>02</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i><span>03</span></a>
+            </div>   
+    </section>
+  
+  <!-- /.menu menu-second -->
+      
+      <section class="portfolio">
+         <div class="portfolio-wrap">
+            <ul class="breadcrumb text-left">
+               <li><a href="#" class="breadcrumb__link">Главная   </a> <span class="divider">/</span></li>
+               <li><a href="#" class="breadcrumb__link">Портфолио</a></li>
+
+            </ul>
+
+            <p class="accent-header accent-header__doble text-center"><span>работы</span> наши работы</p>
+            
+            <div class="portfolio__portfolio-box">
+
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-1.png">
+                       <img src="images/port-1.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Камин на дачном участке </p>
+                  
+                  <div class="portfolio__portfolio-box__item__title">
+                     <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                     
+                  </div>
+
+               </div>
+
+
+               
+               <div class="portfolio__portfolio-box__item">
+                  <!-- <img src="images/port-2.png" alt="" class="portfolio__portfolio-box__item__picture"> -->
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-2.png">
+                       <img src="images/port-2.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Биокамин в квартире по адресу: пр. Ленина 8а</p>
+                  
+                  <div class="portfolio__portfolio-box__item__title">
+                      <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                  </div>
+                </div>
+
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-3.png">
+                       <img src="images/port-3.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Барбекю в частном секторе</p>
+                  <div class="portfolio__portfolio-box__item__title">
+                     <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                  </div>
+               </div>
+               
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-4.png">
+                       <img src="images/port-4.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Электрокамин в элитном пентхаусе </p>
+                  <div class="portfolio__portfolio-box__item__title">
+                      <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                    
+                  </div>
+               </div>
+
+                <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-5.png">
+                       <img src="images/port-5.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Электрокамин в элитном пентхаусе </p>
+                  <div class="portfolio__portfolio-box__item__title">
+                     <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                     
+                  </div>
+               </div>
+               
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-6.png">
+                       <img src="images/port-6.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Камин на дачном участке</p>
+                  <div class="portfolio__portfolio-box__item__title">
+                      <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                  </div>
+               </div>
+
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-7.png">
+                       <img src="images/port-7.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Биокамин в квартире по адресу: пр. Ленина 8а</p> 
+                  <div class="portfolio__portfolio-box__item__title">
+                     <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                  </div>
+               </div>
+               
+               <div class="portfolio__portfolio-box__item">
+                  <picture>
+                       <source media="(max-width: 440px)" srcset="images/port-small-8.png">
+                       <img src="images/port-8.png" class="portfolio__portfolio-box__item__picture" alt="">
+                  </picture>
+                  <p class="portfolio__portfolio-box__item__text">Барбекю в частном секторе</p>
+                  <div class="portfolio__portfolio-box__item__title">
+                      <a href="#" class="portfolio__portfolio-box__item__link"></a>
+                  </div>
+               </div>
+            
+            
+            <a href="#" class="btn btn_gray portfolio-btn">
+               <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAxOSAyNSI+PGc+PGcgb3BhY2l0eT0iLjc1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODk2IC0yMTA0KSI+PGltYWdlIHdpZHRoPSIxOSIgaGVpZ2h0PSIyNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODk2IDIxMDQpIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUJNQUFBQVpDQVlBQUFEVHl4V3FBQUFCL0VsRVFWUklTNlhWT1l5T1lSQUg4TitpSUs0SVZ1SU1uU3RLZ3NxWmlDZ2R3UzZkSTZIYVVPb1FGWW1qYzhkUmlraWNGVUlwcm80NEU1YUlLeFNJekdhKzVQWHU5KzM3Zld2SzU1bm5QLytaLzh3OGJhcHRPYWJpV0pWclc0WERCTHpHV1d6NEg3Qkp1SWZ4Mkk0ai9RV2JqU3VZbUFEM2NSblBjUVB2NmdIWFMzTWdIbUJtQXlZL2NSejc4TExvMDZobUM1UEp5SFIrbEd6bVlXaWVmY0c2ektEbnFDOEJJdFc3R0lhZE9JUjJyTVVlakVyUVpiaGVCQnVOVC9oVFNtMEdIdU1rTmhYdVF1V3JXWXBmS1ZKM2pkbWxqTFFDWDB1QXdTU1VQVkE2SDR0bnlid25XSUFGcXcvcDJJSFRWUzFRdU45YWFKbjJBTnVJVS9pQjZYalJBdGdRZEtjb25RRVdFdS9DSFlTS3JkcE5MQXFjQUR1TWJiaUlOYTBpNFFKV1I3b0J0aGU3Y1F1TCt3RjJHd3V3UDhDaTZLSEdkNFJDVWJ0bWJRcWVJbXJYRVdBQjhENWZSN3BIbTBVcWlCZFB4dFQ2N0FRNjhRM1RVcUVpWmhkZTRYd3AwUEFjcDJqNFZUV3dZUGNXZzdMall5RytLVHlzQll2aGYxSUNISkFOLzdFNG0wdHhMUjBqVXN4Zk1Ja1M3TURCWkQ0ZkQrdVZvanpvTVU3bk1DS2RRNVJZa09Nd0s4OCtZeVZDeFgrczN0YVluSzJ5R1lNYmlCSERQd2UvaS9kOXJhQmdzeVEvazJBeU54L0dueEFaOUVxMTZrT3BCWTZXaVVrSmtXSkJocks5ckZtd00xaWZmMEpSNWNxYTFRdTZKVCtUV0lnTjdTOEFBMktoblAxWWRRQUFBQUJKUlU1RXJrSmdnZz09Ii8+PC9nPjwvZz48L3N2Zz4=" alt="" class="portfolio-icon">Загрузить еще</a>
+         </div>
+      </div>
+      </section>
+
+
+      <!-- /.portfolio -->
+
+
+
+      <section class="footer-before">
+        <p class="accent-header accent-header-big">СКИДКИ НА КАМИНЫ ИЗ МРАМОРА ДО 50%</p>
+        <p class="accent-header accent-header-small">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ НА КАМИННЫЕ ТОПКИ</p>
+        
+        <p class="text">Скидки распространяются на выставочные модели порталов каминов, при комплексном заказе с монтажом. За подробностями текущих акций и спецпредложений 
+<br> обращайтесь к нашим менеджерам.</p>
+       
+       <form class="section-form" action="">
+           <input type="tel" class="input_tel" placeholder="+7 (___) ___-__-__" required="">
+           <a href="" class="btn">Заказать звонок</a>
+           
+       </form>
+        
+    </section>
+    
+    <footer class="footer">
+       <div class="footer-container">
+        <div class="footer-contact"><div class="logo">
+            <a href="/"><img src="img/logo.png" alt=""> </a></div>
+                <br>
+                  <div><p>Позвоните нам:<br></p>
+                   <a href="tel:+7 (978) 127-23-33" class=" tel">+7 (978) 127-23-33</a>
+                   <a href="viber://add?number=7 (978) 127-23-33" class=" tel"><i class="viber-ico"></i></a> 
+                   <a href="whatsapp://send?phone=+7 (978) 127-23-33" class=" tel"><i class="whatsapp-ico"></i></a></div>
+                   <div>
+                   <p>E-mail: <br></p>
+                  <a href="mailto:domkamin@gmail.com" class="email">domkamin@gmail.com</a></div>
+                   <div class="box-soc-icons"> 
+                       <a href=""><i class="vk-ico"></i></a> 
+                       <a href=""><i class="insta-ico"></i></a> 
+                       <a href=""><i class="fb-ico"></i></a> 
+                       <a href=""><i class="youtube-ico"></i></a> 
+                       <a href=""><i class="ok-ico"></i></a> 
+                   </div>
+                 
+            </div>
+        <div>
+           <h2>Категории</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" >Услуги  </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Камины </a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Изделия из мрамора </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Топки </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Печи-камины </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Электрокамины</a></div>
+                 <div class="itemMenuBottom"><a href="" rel="nofollow" >Биокамины | Газовые камины </a></div>
+                  <div class="itemMenuBottom"><a href="" rel="nofollow" >Дымоходы </a></div>
+                   <div class="itemMenuBottom"><a href="" rel="nofollow" >Барбекю</a></div>
+                    <div class="itemMenuBottom"><a href="" rel="nofollow" >Дизайнерские камины</a></div>
+                 
+        </div>
+
+        
+        
+        <div>
+           <h2>Услуги</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" > Камины на заказ </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Консультации </a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Изделия из мрамора </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Проектирование и дизайн </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Монтаж каминов </a></div>
+                 <div class="itemMenuBottom"><a href="" rel="nofollow" >Выезд на объект </a></div>
+                   <div class="itemMenuBottom"><a href="" rel="nofollow" >Выбор мрамора</a></div>
+                    <div class="itemMenuBottom"><a href="" rel="nofollow" >Сервис и гарантия</a></div>
+        </div>
+        <div>
+           <h2>Информация</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" >О компании </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Производство каминов</a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Оплата </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Доставка </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Контакты </a></div>
+                
+                <a href="img/copyright-logo.png" class="cjart" rel="nofollow"><img src="data:image/png;base64,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" alt=""><span>Создано с огоньком</span> <i class="flame-ico"></i></a>
+                
+        </div>
+    
+        <a href="#body" class="totop"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAEBElEQVRYhc2YTY8VRRSGn7o0jDozOCOS+CNYAA4fw9aQQAxEExIXEglx50p/gDOBv8EGwocE0ERICG4MCx3DoHFhJCFRN7KCQBDHkenq7mIx1XfqVp/6aGYWnOSmbled89Zb55w+VdXKfInhFZfCUlQo2FC6Ll4E+/TmU1GYOT1viqGxD7Je0iHbDOK+/ipJJQC3/Rvh3RCxTOxVkqlVb5T4eDn4zVpOhkGV0/r965FcBxgoaIQJpRRobOuGTAqjvxhpvM8iRzyZGwpJP2Ur6a7Lk1KIpZdI0gmNhQjneLMJvTg53o15JNdb2SVIyjX/WbGWk/64VKZS3pXyNySNS9IF9cOcIzFdKXXc+XqRdEGl/ylJlbOXwRzJSX91od0m9sIAbOMI8A6POROdPHc3a6CgjhiFCrk17uhtZxdw3ZJd5hEXcw8acZJSsW7JxCZwiTfA2+yg5mfH/gJvUfKYq0MsaePIIDmgscZt2Bugtq3fH/pNs5+KX6gYoFmm4gE1UHOFN/l4aC/hpGSkBElvp5+v/hjAFLvR/AgMrN5+DH8BD1BMYbjAJAX/cC6IEZNgCUqBtc8T7GCFBYfgUf7lNxQwzh7gVxQTGM7yBisscTmDVofkYMT1bphjPwOMsZuKn9CMoYGSYzzjxjCkz/iDin1o/rfjXzHGh505epNM5V77GzCL5g4lE2hA8x7LfN3B+o97lOxC89AS/YaCE31Jxg+9kihm0NwGCttzCMP3Qf0V7qM4ANwFpoGzgMZwKWu+Bgoqr3NAeIU1e4HbwBbbc5RNfCfajT7/Sc0sirsYJoGLKEoGXEuSrP1wN0CFHOLnzFCygOZ1G7r3UdwI2vnPA+5TMkvJI2t/leccT5Ls5GQoN5fYSckiFZvsBIfZws2OXuq54Hcq3kXzlBLQnJ9bnP8kTVICrlmrkU85QskiJYoSKPmA17glEvHfXBen7Rvjb0r2oFmyeOfmfpj/vJ8nuxN9RMVmKkBzmHG+HS4ktTv5C2ifx215qli21eGzGMliCOZLu1dv5ThP0BjusI1bw4lcnZBtaL83wCT3eMJB4AsUnwZJGvcU5AM1rB0KpjgJrHrDPxHFboluKx0wplk4PXNqIUjQ8ujeu1P3mNytMzT+Ukc1d3UxAOluEjp/ktDrTdINYeiA65NItSGSkn4WyTavQjc/V6Rck1pJX/ry0euo1gKkPAnd1ccW53pMSqteV9oQMSkkvr5k4xJEaCW7kJj2JBNaZexNlvR8jNA9qc+FrHN98IlI/dIEobLlfvnwv4LkkhTrZEpyCKbG+sxpfJJ9y4NrI/W5Y1JK5MzRIbl67hsFlcTV83Xbsdq2fTwfIKnMAUxw/419AQ7p+ARiBTzTmy8AndVj2eb6kJAAAAAASUVORK5CYII=" alt=""></a>
+        </div>
+    </footer>
+      
+    
+    <!-- /.footer -->
+      
+
+     
+     
+      
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/my2.js"></script>
+    
+   </body>
+
+</html>
