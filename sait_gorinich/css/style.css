@@ -1715,13 +1715,13 @@ div.drop-down-list__tab_content {
   border-top: 2px solid #ff8a01;
   color: #ff8a01; }
 
-.twb-tabs .card {
+.twb-tabs-slide-tov .card {
   width: 200px;
   height: auto;
   margin-left: 10px;
   margin-right: 10px; }
 
-.twb-tabs .card:hover::before {
+.twb-tabs-slide-tov .card:hover::before {
   left: -10px;
   right: -10px;
   top: -10px;
