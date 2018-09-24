@@ -217,6 +217,35 @@ $('.j-cart-many-info-slider').slick({
           ]
       });  
     
+    
+    
+      
+       $('.tab-slider').slick({
+        dots: false
+        , speed: 300
+        , slidesToShow: 4
+        , slidesToScroll: 1
+            ,responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+           
+               
+            }
+        }, {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+             
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+              
+            }
+        }]
+    });
   
   /*------.drop-down-list-----------*/   
      $(".j-drop-down-list").find(".drop-down-list__tab").click(function (e) {

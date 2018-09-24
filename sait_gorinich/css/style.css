@@ -1715,6 +1715,18 @@ div.drop-down-list__tab_content {
   border-top: 2px solid #ff8a01;
   color: #ff8a01; }
 
+.twb-tabs .card {
+  width: 200px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.twb-tabs .card:hover::before {
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px; }
+
 .tab-title {
   font-size: 24px;
   font-weight: 900; }
@@ -1738,8 +1750,22 @@ div.drop-down-list__tab_content {
 .twb-tabs .tab-content > .tab-pane {
   display: none; }
 
+.twb-tabs-slide-tov.twb-tabs .tab-content > .tab-pane {
+  visibility: hidden;
+  display: block;
+  z-index: -10;
+  overflow: hidden;
+  height: 0; }
+
 .twb-tabs .tab-content > .active {
   display: block; }
+
+.twb-tabs-slide-tov.twb-tabs .tab-content > .active {
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  overflow: inherit;
+  height: auto; }
 
 /* Кастомная тема табов, изменяйте на свой вкус или напишите свою*/
 .twb-tabs .twb-tablist {
