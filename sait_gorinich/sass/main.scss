@@ -1373,7 +1373,7 @@ background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAY
 
 @media (max-width: 1200px){
  .accent-header.accent-header__catalog{
-        width: 768px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -2181,6 +2181,19 @@ top:0;
         left: 0;
     }
 }
+
+
+@media (max-width: 768px){
+  .side-right  .twb-tabs {
+    width: 320px;
+    margin: auto;
+}
+    
+.twb-tabs-slide-tov .card.card-small {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* .search-form----------------------------------------------------------------*/
 
 
@@ -4635,9 +4648,13 @@ opacity:0.1;
 }
 
  
+@media (max-width: 768px){
+   .cart-many-info-head {
+    text-align: center;
+       font-size: 22px;} 
+}
 
-
-
+}
 /*------------listing-settings---------*/
 .listing-settings{
     height: 40px;
@@ -4703,6 +4720,25 @@ opacity:0.1;
     .listing-settings__listing-type{
         margin-left: 20px;
     }
+    .btn-filter, .btn-category {
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    font-size: 0px;
+    margin-right: 10px;
+    }
+    
+    .listing-settings  span {
+    display: none;
+}
+    .listing-settings__listing-type {
+    margin-left: 0px;
+}
+   
+   .listing-settings__listing-type i {
+    margin-left: 10px;
+} 
+    
 }
    @media (max-width: 1200px){
        .cart-many-info .cart-many-info__info {
@@ -4715,7 +4751,45 @@ opacity:0.1;
             width: 280px;}
     }
 
-
+@media (max-width: 768px){
+    
+    .cart-many-info {
+    flex-direction: column;
+    align-items: center;
+}
+    
+    .listing-settings {
+    justify-content: center;
+}
+    .cart-many-info .cart-many-info__info {
+        width: 300px;
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    
+    .cart-many-info {
+        justify-content: center;}
+    
+    .cart-many-info__info__technical-info {
+        flex-direction: column;}
+    
+    .cart-many-info__info__o-pay {
+    flex-direction: column;
+        align-items: center;}
+   .card__price-box-ifo__quick-order {
+    flex-direction: column;
+}
+    
+    .card__price-box-ifo__servises i {
+    margin-right: 15px;
+    flex: 31px;
+        flex-shrink: 0;}
+    
+    .cart-many-info .btn {
+        margin-top: 20px;
+    }
+    
+}
 
 /*---listing-settings-----end---------------------------------------*/
 
@@ -4772,6 +4846,16 @@ min-height:145px;
         float: left;
     }
 }
+@media (max-width: 768px){
+.side-right .card-small {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
 /*-------------.card-list-------*/
 
 
