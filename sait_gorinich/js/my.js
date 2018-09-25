@@ -160,11 +160,28 @@ $(document).ready(function () {
   asNavFor: '.j-cart-many-info-slider'
 });
 $('.j-cart-many-info-slider').slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.j-slider-for-cart-many-info-slider',
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  centerPadding: '0px',
+   responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+           
+               
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+              
+            }
+        }] 
+    
 });
     
  $('.about-fireplace-slider').slick({
@@ -228,14 +245,14 @@ $('.j-cart-many-info-slider').slick({
             ,responsive: [{
             breakpoint: 1200,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
            
                
             }
         }, {
             breakpoint: 991,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
              
             }
         }, {
@@ -323,8 +340,17 @@ $('.j-cart-many-info-slider').slick({
          }
      });
     
- 
-     
+ $(".j-btn-filter").click(function(){
+    $(".j-drop-down-filter").toggleClass("opened"); 
+    $(".j-drop-down-list-category").removeClass("opened"); 
+ });
+    
+     $(".j-btn-category").click(function(){
+    $(".j-drop-down-list-category").toggleClass("opened"); 
+    $(".j-drop-down-filter").removeClass("opened");
+ });
+    
+    
      
      //menu scroll yakora# скрол по якорям
     $(".totop").on("click", function (event) {
