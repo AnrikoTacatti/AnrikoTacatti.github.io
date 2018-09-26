@@ -4453,7 +4453,13 @@ form.opened + .bg {
     padding-right: 20px;
     justify-content: center;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 20px; }
+  .cart-hit img {
+    max-width: 130px;
+    margin-right: 15px; }
+  .cart-hit-img-box {
+    width: 130px; }
   .cart-hit {
     max-width: 375px;
     width: 100%; }
