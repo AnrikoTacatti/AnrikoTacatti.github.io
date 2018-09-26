@@ -4384,7 +4384,8 @@ form.opened + .bg {
   .baner {
     display: block;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    min-height: 190px; }
   .baner-col {
     float: right;
     clear: right;
