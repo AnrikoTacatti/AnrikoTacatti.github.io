@@ -4338,3 +4338,80 @@ form.opened + .bg {
 
 /*---------------------------end-------------------  .portfolio-----------------------------------------------------------------------*/
 /*-----------------------------end-----------------------  .portfolio-----------------------------------------------------------------*/
+/*---------------------------baner-------------------  .baner-----------------------------------------------------------------------*/
+.baner {
+  width: 100%;
+  background: url("../img/baner-bg.png");
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.baner-header-accent {
+  font-size: 42px;
+  font-family: "BebasNeueBold";
+  color: #ff6200;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.baner_price {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "BebasNeueBold";
+  color: #ff6200;
+  display: inline-block; }
+
+.baner_discount {
+  font-size: 21px;
+  margin-left: 50px;
+  color: #767676;
+  -webkit-text-fill-color: initial;
+  text-decoration: line-through;
+  font-weight: bold;
+  display: inline-block; }
+
+.baner-header {
+  font-size: 28px;
+  color: white;
+  font-weight: 600; }
+
+.baner-btn {
+  margin-top: 20px; }
+
+/*---------------------------cart-hit-------------------   cart-hit-----------------------------------------------------------------------*/
+.cart-hit-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px; }
+
+.cart-hit {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 455px;
+  padding: 25px 15px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 20px; }
+
+.cart-hit .car-text {
+  background: #fff; }
+
+.cart-hit img {
+  max-width: 160px;
+  margin-right: 10px; }
+
+.cart-hit-img-box {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.cart-hit-header {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold; }
