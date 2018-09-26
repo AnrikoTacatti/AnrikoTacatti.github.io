@@ -5419,6 +5419,43 @@ min-height:145px;
 .baner-btn{
     margin-top: 20px;
 }
+
+
+@media (max-width: 768px){
+    .baner{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .baner-col{
+            float: right;
+    clear: right;
+            width: 50%;
+    }
+    .baner-col:first-of-type{
+            float: left;
+    clear: left;
+        text-align: center;
+    }
+    .baner-col:first-of-type img{
+        width: 130px;
+    }
+    .baner-header-accent {
+        font-size: 28px;}
+     .baner-header {
+         font-size: 18px;}
+    .baner_price {
+        font-size: 18px;}
+    .baner_discount {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+    
+    .baner-btn {
+    width: 140px;
+}
+    
+}
 /*---------------------------cart-hit-------------------   cart-hit-----------------------------------------------------------------------*/
 .cart-hit-box{
     display: flex;
@@ -5455,4 +5492,26 @@ min-height:145px;
     font-size: 24px;
     margin-bottom: 25px;
     font-weight: bold;
+}
+
+@media (max-width: 1200px){
+    .cart-hit{  width: 375px;}
+}
+@media (max-width: 768px){
+    
+   .cart-hit-box{
+padding-left: 20px;
+       padding-right: 20px;
+       justify-content:center;
+        flex-direction: column;
+    align-items: center;
+    
+    } 
+    .cart-hit {
+    max-width: 375px;
+    width: 100%;
+}
+    .cart-hit-header {
+    font-size: 23px;
+        margin-bottom: 10px;}
 }
