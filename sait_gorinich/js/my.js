@@ -246,20 +246,21 @@ $('.j-cart-many-info-slider').slick({
             breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
-           
+                 slidesToScroll: 1
                
             }
         }, {
-            breakpoint: 991,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
+                 slidesToScroll: 1
              
             }
         }, {
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-              
+                slidesToScroll: 1
             }
         }]
     });
