@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+       $("input[type='tel']").mask("+7 (999) 999-99-99");
+    
    $('.j-header-front__slider').slick({
         dots: false
         , speed: 300
@@ -60,7 +63,7 @@ $(document).ready(function () {
     $('.j-header-front-bottom_slider').slick({
         dots: false
         , speed: 300
-        , slidesToShow: 4
+        , slidesToShow: 3
         , slidesToScroll: 1
              ,responsive: [{
             breakpoint: 1200,
@@ -276,8 +279,8 @@ $('.j-cart-many-info-slider').slick({
     
   
      $(".drop-down-list__tab_content").find("li").click(function (e) {
-         $(e.target).parent(".drop-down-list__tab_content").find("li").removeClass("active");
-          $(e.target).addClass("active") ;
+         //$(e.target).parent(".drop-down-list__tab_content").find("li").removeClass("active");
+          $(e.target).toggleClass("active") ;
          
      });
 
@@ -331,6 +334,14 @@ $('.j-cart-many-info-slider').slick({
       
     });
   
+     
+    
+     $("form").submit(function (e) {
+           $("#message-send-ok").addClass("opened");
+e.preventDefault;
+      
+      
+    });
     
      $(".j-switch").click(function(){
         if($(this).is(':checked')){
@@ -425,7 +436,7 @@ $('.j-cart-many-info-slider').slick({
            $(".j-table-castom-box").mCustomScrollbar({axis:"x",advanced:{ updateOnSelectorChange: "string" } });
        }}); 
     
-      $("input[type='tel']").mask("+7 (999) 999-99-99");
+   
         
 });
 

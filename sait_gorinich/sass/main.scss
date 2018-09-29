@@ -698,6 +698,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #000;
+     top:31px;
+    transform: rotate(180deg);
 }
 
 .drop-down-list__tab.active{
@@ -706,8 +708,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     
 }
 .drop-down-list__tab.active:after{
-   top:31px;
-    transform: rotate(180deg);
+  top:23px;
+   transform: rotate(0deg);
     
 }
 .drop-down-list__tab_content{
@@ -729,6 +731,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 div.drop-down-list__tab_content{
      overflow-y: inherit;
+        height: 90px;
 }
  .drop-down-list__tab.active .drop-down-list__tab_content{
     display: block;
@@ -739,18 +742,20 @@ div.drop-down-list__tab_content{
 }
 .drop-down-list__tab_content li{
     height: calc(100%/5);
-    padding-left: 20px;
+   padding-left: 5px;
     position: relative;
     display: flex;
     align-items: center;
     font-size: 14px;
     color: #8b8b8b;
     cursor: pointer;
-        font-weight: 100;
+    font-weight: 100;
     font-family: "BebasNeueRegular";
 }
-
-.drop-down-list__tab_content li:before {
+.drop-down-filter .drop-down-list__tab_content li{
+    padding-left: 20px;
+}
+.drop-down-filter .drop-down-list__tab_content li:before {
     content: '';
     display: block;
     position: absolute;
@@ -763,6 +768,7 @@ div.drop-down-list__tab_content{
     border: 1px solid #ff8a01;
      
 }
+
 .drop-down-list__tab_content li:hover{
      color: #000;
 }
@@ -772,7 +778,7 @@ div.drop-down-list__tab_content{
     color: #000;
     font-family: "BebasNeuebold";
 }
-.drop-down-list__tab_content li.active:after{
+.drop-down-filter .drop-down-list__tab_content li.active:after{
     content: '';
     display: block;
     position: absolute;
@@ -1074,6 +1080,7 @@ div.drop-down-list__tab_content{
     margin-left: 35px;
     margin-right: 35px;
      transition: all .5s;
+        background: transparent;
 }
       .section-form .btn:hover ,.header-btn:hover {
           background: #c7c7c7;
@@ -2293,7 +2300,7 @@ top:0;
 .twb-tabs-slide-tov .card.card-small {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 250px;
 }
     
     .side-right .twb-tabs .twb-tab-content  {
@@ -2562,7 +2569,7 @@ margin: 0 auto;
 }
 
 
-.header-front__slider:hover .slick-arrow{
+.header-front__slider .slick-arrow:hover{
     opacity: 1;
 }
 .header-front__slider .slick-prev {
@@ -2632,6 +2639,14 @@ color: rgba(255, 255, 255, 255);
 .header-front-bottom-slider__slide-box:hover{
     cursor: pointer;
 }
+.header-front-bottom-slider__slide-box:hover {
+    overflow: hidden;
+}
+.header-front-bottom-slider__slide-box:hover img{
+       transform: scale(1.1);
+    overflow: hidden;
+    transition:  transform .5s;
+}
 .header-front-bottom-slider__slide-box a{
     position: absolute;
     width: 100%;
@@ -2649,9 +2664,11 @@ color: rgba(255, 255, 255, 255);
     color:#fff;
     
 }
+
 .header-front-bottom-slider__slide-box:hover a{
         color: #c7c7c7;
 }
+
 .header-front-bottom-slider__slide-box:before{
      content: " ";
     width: 100%;
@@ -2664,9 +2681,10 @@ color: rgba(255, 255, 255, 255);
     z-index: 2;
     
 }
+
 .header-front-bottom-slider__slide-box:after{
-    width: 94%;
-    height: 90%;
+    width: 92%;
+    height: 88%;
     content: " ";
     display: block;
     position: absolute;
@@ -2675,7 +2693,14 @@ color: rgba(255, 255, 255, 255);
     bottom: 0;
     top: 0;
     margin: auto;
-    border: 1px solid #ffb155;}
+    border: 1px solid #ffb155;
+  transition:  all .5s;
+}
+
+.header-front-bottom-slider__slide-box:hover:after{
+     width: 94%;
+    height: 90%;
+}
 
 .header-front-bottom-slider__slide-box:hover:before,.header-front-bottom-slider__slide-box.active:before{
      background: #00000000;
@@ -3547,6 +3572,8 @@ display: flex;
     right: 0;
     bottom: 75px;
         right: 13.5vw;
+    visibility: hidden;
+    z-index: 100;
 }
 
 @media (max-width: 1400px){
@@ -5473,7 +5500,9 @@ min-height:145px;
             font-weight: 400;
             line-height: 24px;
             cursor: pointer;}
-            
+.breadcrumb__link:hover,.breadcrumb li:last-of-type  .breadcrumb__link{
+    color:#ff8a01;
+}
           .breadcrumb:last-child {
              color: #414141;
              font-family: "MuseoSansCyrl500";
