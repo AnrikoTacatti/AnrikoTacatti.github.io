@@ -1975,7 +1975,8 @@ div.drop-down-list__tab_content {
     margin: auto; }
   .twb-tabs-slide-tov .card.card-small {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 100%; }
   .side-right .twb-tabs .twb-tab-content {
     padding-left: 15px;
     padding-right: 15px; } }
