@@ -337,10 +337,12 @@ $('.j-cart-many-info-slider').slick({
      
     
      $("form").submit(function (e) {
+       
+         if(!$(this).hasClass("search-form")|| !$(this).hasClass("form-comments") ){
            $("#message-send-ok").addClass("opened");
-e.preventDefault;
-      
-      
+
+         }
+      return false;
     });
     
      $(".j-switch").click(function(){

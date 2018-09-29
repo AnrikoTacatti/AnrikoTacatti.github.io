@@ -283,7 +283,9 @@ input, textarea.textarea {
     display: block;
     margin: auto;
 }
-
+textarea.textarea{
+    padding-top: 5px;
+}
 
 input::-webkit-input-placeholder{
     font-size: 16px;
@@ -2266,7 +2268,13 @@ top:0;
 	padding: 15px;
 
 }
-
+.twb-tabs .twb-tab-content .slick-arrow{
+    opacity: 0.2;
+    transition: .5s;
+}
+.twb-tabs .twb-tab-content .slick-arrow:hover{
+    opacity: 1;
+}
 @media (max-width: 1200px){
    .twb-tabs .twb-tab-content .slick-next {
     right: 0px;
@@ -4499,7 +4507,9 @@ form.opened+.bg {
     display: none;
        box-shadow: 0 0 100vw 100vw rgba(63, 37, 48, 0.74);
 }
-
+.form-message-send-ok {
+     z-index: 10010;
+}
 .form.opened{
     display: block;
 }
@@ -4525,10 +4535,12 @@ form.opened+.bg {
 }
 
 
-.form .btn, .form input:not([type="checkbox"]),.form textarea.textarea{
+.form .btn, .form input:not([type="checkbox"]){
     width: 220px;
 }
-
+.form textarea.textarea{
+    max-width: 320px;
+}
 .form input[type="checkbox"] {
     border: 1px solid #ff8a01;
 
@@ -4607,10 +4619,10 @@ form.opened+.bg {
 .form-comments p.btn-text{
    
 }
-.form-comments input:not([type="checkbox"]):not([type="file"]), textarea.textarea {
+.form-comments input:not([type="checkbox"]):not([type="file"]),.form-comments textarea.textarea {
     background: #fff0;
     border: 1px solid #171616a3;
-    padding: 0 10px;
+    padding: 5px 10px;
     margin-bottom: 20px;
     width: 100%;
     margin-top: 5px;
@@ -4630,7 +4642,12 @@ form.opened+.bg {
     margin-left: 25px;
     margin-right: 25px;
     color:#000;
+      cursor: pointer;
+      transition:background .5s; 
 }
+.labelfile:hover {
+    background: #c6c6c6;}
+
 
 .labelfile input[type="file"]{
 
@@ -4692,7 +4709,7 @@ display: none;
   
     
     
-    .form-found-cheaper .btn, .form input:not([type="checkbox"]) {
+    .form-found-cheaper .btn, .form input:not([type="checkbox"]),.textarea.textarea {
     width: 260px;
 }
   .form-head {
