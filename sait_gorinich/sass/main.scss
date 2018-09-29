@@ -2286,7 +2286,7 @@ top:0;
 
 @media (max-width: 768px){
   .side-right  .twb-tabs {
-    width: 320px;
+    width: 300px;
     margin: auto;
 }
     
@@ -5844,7 +5844,18 @@ color: rgba(23, 23, 23, 255);
         color: #ff5858;
 }
 
-
+@media (max-width: 768px){
+    .comparison-box  .twb-tablist li a{
+   margin-right: auto;
+}
+   .comparison-box .btn-reset {
+    margin-top: 0px;
+    width: 150px;
+    text-decoration: underline;
+    text-align: left;
+   
+} 
+}
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
        background-color: #ff8a01 !important;
     background-color:   #ff8a01;
