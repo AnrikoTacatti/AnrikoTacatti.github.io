@@ -8,12 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+       
     
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>trillo &mdash; Your all-in-one booking app</title>
-    
+   
 </head>
 
 <body id="body">
@@ -111,6 +112,8 @@
     </section>
   
     <div class="wrap">
+
+       
        
        <ul class="breadcrumb text-left">
                <li><a href="#" class="breadcrumb__link">Главная   </a> <span class="divider">/</span></li>
@@ -122,7 +125,7 @@
             </ul>
             
           
-            
+                   <p class="accent-header accent-header__doble accent-header__str"><span>Сравнение</span>Сравнение товаров</p>
        
         <!----------side-left"------------------------------side-left"-------------------------------------------------->
             <div class="side-left">
@@ -130,9 +133,9 @@
           <div class="drop-down-list-box j-drop-down-list-category">
            <p class="accent-header accent-header-small accent-header-small-black">Категории</p>
            <ul class="drop-down-list j-drop-down-list ">
-          <li class="drop-down-list__tab active">
+          <li class="drop-down-list__tab ">
         Дровяные камины 
-             <ul class="drop-down-list__tab_content active " >
+             <ul class="drop-down-list__tab_content  " >
                <li> Стальные топки </li>
                <li>Чугунные топки </li>
                <li>Угловые топки </li>
@@ -187,81 +190,177 @@
         
         
     <div class="side-right">
-     
-  <div  class="cart-many-info">
- 
-   <p class="cart-many-info-head">Каминная топка KRATKI Antek R</p>
-  
-    <div class="cart-many-info-slider-box">
-        <div class="item-tags"><span class="tag-stock ">Акция</span> <span class="tag-hit">Хит</span><span class="tag-percent">25%</span></div>
-         <i class="add_to_liked add_to_liked-ico"></i>
-   <i class="rating-ico"></i>
-    <div class="slider-for-cart-many-info-slider j-slider-for-cart-many-info-slider">      
-  <div><a href=""><img src="img/cart-many-info-slider-img-1.png" alt=""></a></div>
- <div><a href=""><img src="img/cart-many-info-slider-img-1.png" alt=""></a></div>
- <div><a href=""><img src="img/cart-many-info-slider-img-1.png" alt=""></a></div>
-  <div><a href=""><img src="img/cart-many-info-slider-img-1.png" alt=""></a></div>
+     <div class="comparison-box">
+        <div class="twb-tabs ">
+        <ul class="twb-tablist">
+            <li class="active"><a href="#comparison-tab-tov1" data-toggle="tab"><p class="tab-head">Все характеристики</p></a></li>
+            <li><a href="#comparison-tab-tov2" data-toggle="tab"><p class="tab-head">Только отличия</p></a></li>
+            <li><a href="#" class=" btn-simple btn-reset btn-reset__gray">Сбросить всё</a></li>
+        </ul>
+    <div class="twb-tab-content tab-content comparison-tab-content" id="j-comparison-tab-content" >
+            <div id="comparison-tab-tov1" class="tab-pane fade in active">
+               
+        
+                         
+                   <div class="card card-small">
+                     <div class="close-content">×</div>
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
             
-        </div>
-           
-           <div class="j-cart-many-info-slider cart-many-info-slider">
-  <div><div class="slider-for-cart-many-info-slider__slide-box"><img src="img/slider-for-cart-many-info-slider-img-1.png" alt=""></div></div>
- <div><div class="slider-for-cart-many-info-slider__slide-box"><img src="img/slider-for-cart-many-info-slider-img-2.png" alt=""></div></div>
-  <div><div class="slider-for-cart-many-info-slider__slide-box"><img src="img/slider-for-cart-many-info-slider-img-3.png" alt=""></div></div>
- <div><div class="slider-for-cart-many-info-slider__slide-box"><img src="img/slider-for-cart-many-info-slider-img-4.png" alt=""></div></div>
-   <div><div class="slider-for-cart-many-info-slider__slide-box"><img src="img/slider-for-cart-many-info-slider-img-4.png" alt=""></div></div>         
-        </div>
-        
-    </div>
-    <div class="cart-many-info__info">
-       
-        
-        
-<div class="cart-many-info__info__technical-info">
-    <div>
-    Артикул: <span class="b">&nbsp; F1400</span> <br>
-    Страна: <span class="b">&nbsp; Польша</span> <br>
-    Бренд: <a href="#" class="b accent-text">&nbsp; Kratki</a></div>
-    <div>
-    Мощность: <span class="b">&nbsp; 14 (кВт)</span> <br>
-    Вес: <span class="b">&nbsp; 155 (кг)</span> <br>
-    Диаметр дымохода: <span class="b">&nbsp; 200 (мм) </span>
-    </div>
-    
-</div>
-  <div class="cart-many-info__info__o-pay">
-   <div class="card__price-box-ifo">
-                  <p class="discount card__discount">32 340 руб.</p>
-                   <p class="card__price"><span>9 750</span> руб.</p><br>
-                   <p class="card__econom"><span>Экономия:</span>12 000 руб.</p><br>
-                   <a href="#" class="found-cheaper-btn js-found-cheaper-btn">  Нашли дешевле?</a>
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                 
                    </div>
-   
-   <div class="card__price-box-ifo__btns">
-       <a href="" class=" btn btn-black btn-cart btn-big">В корзину</a>
-       <div class="product-count">
-
-							<div class="btn-count btn-count-minus" onselectstart="return false" onmousedown="return false">‒</div>
-							<input type="text" name="n1" id="n1" value="1">
-							<div class="btn-count btn-count-plus" onselectstart="return false" onmousedown="return false">+</div>
-
-						</div>
-   </div>
-   
-  
-   </div>
-    <div class="card__price-box-ifo__servises">
-       <p><i class="consulting-ico"></i>   Подробная консультация по выбору печи по объему помещения и Вашим требованиям.</p><br>
-           <p><i class="design-ico"></i>БЕСПЛАТНЫЙ расчет дымохода по Вашим размерам! Бесплатный замер.</p><br>
-       <p><i class="smartphone-ico"></i>Звоните или закажите обратный звонок в 1 клик и мы сами Вам перезвоним!</p>
-   </div>
-   <div class="card__price-box-ifo__quick-order">
-       <a href="tel:+7 (978) 127-23-33" class="tel"> <i class="tel-black-ico"></i> +7 (978) 127-23-33</a>
-       <a href="#" class="btn btn-orange btn-big">Купить в 1 клик</a>
-   </div>
-    </div>
-
+               </div>
+                      <div class="card card-small">
+             <div class="close-content">×</div>
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+           
+                   <p class="card__price"><span>12 300</span> руб.</p>
+               
+                   </div>
+               </div>
+                      <div class="card card-small">
+              <div class="close-content">×</div>
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+               
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                
+                   </div>
+               </div>
+                       <div class="card card-small">
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+               
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                
+                   </div>
+               </div>
         </div>
+             <div id="comparison-tab-tov2" class="tab-pane fade">
+               
+        
+                         
+                   <div class="card card-small ">
+         
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+            
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                 
+                   </div>
+               </div>
+                      <div class="card card-small">
+             
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+           
+                   <p class="card__price"><span>12 300</span> руб.</p>
+               
+                   </div>
+               </div>
+                      <div class="card card-small">
+             
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+               
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                
+                   </div>
+               </div>
+                       <div class="card card-small">
+                  <div class="card__img--box">
+                     <img src="img/product-2.png" alt="Product-1" class="card__img">
+                  </div>
+                  <h3 class="card__title">Kratki Eryk glass</h3>
+                 <div class="card__price-box">
+               
+                   <p class="card__price"><span>12 300</span> руб.</p>
+                
+                   </div>
+               </div>
+        </div>
+            
+    </div>
+</div>
+     <div class="j-table-castom-box table-castom-box">
+     <table class="table-castom">
+                     <tbody>
+                      <tr><th>Бренд</th>
+                      <th>Stovax</th>
+                       <th>RITMIX</th>
+                        <th>Stovax</th>
+                       </tr>
+                   <tr>
+                    <td>Артикул	</td>
+                    <td> VFP01+V18	</td>
+                    <td> 563F7E8	</td>
+                     <td> VFP01+V18	</td>
+                </tr>
+                 <tr>
+                    <td>Высота, мм	</td>
+                    <td>969	 </td>
+                    <td>969	 </td>
+                    <td>969	 </td>
+                </tr>
+                 <tr>
+                    <td>Материал</td>
+                    <td> Чугун </td>
+                    <td> Чугун </td>
+                    <td> Чугун </td>
+                </tr>
+                  <tr>
+                    <td>Ширина, мм	</td>
+                    <td> 969 </td>
+                    <td> 969 </td>
+                    <td> 969 </td>
+                </tr>
+                  <tr>
+                    <td>Глубина, мм	</td>
+                    <td> 287</td>
+                    <td> 287</td>
+                    <td> 287</td>
+                </tr>
+                  <tr>
+                    <td>Выбор материала</td>
+                    <td> черный с классическим козырьком  </td>
+                    <td> черный с классическим козырьком  </td>
+                    <td> черный с классическим козырьком  </td>
+                </tr>
+                </tbody>
+            </table>
+     
+     </div>
+   </div>  
+  
+
+
+
+        
+        
+
    
    <!--TABS-------------------TABS---------------TABS--------------*/-->
    
@@ -525,9 +624,6 @@
 </div>
 
  <!--TABS--------END-----------TABS------END---------TABS--------------*/-->
-            
-
-  <!--TABS--------END-----------TABS------END---------TABS--------------*/-->
 
    <!--TABS-------------------TABS---------------TABS--------------*/-->
       <div class="twb-tabs twb-tabs-slide-tov">
@@ -1066,8 +1162,6 @@
 </div>
 
 
-
-
    <!--side-right-news-container-------------------side-right-news-container---------------side-right-news-container--------------*/-->
 
 <div class="side-right-news-container">
@@ -1274,61 +1368,21 @@
    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+ 
+     <script src="js/jquery.mCustomScrollbar.min.js"></script>
+ <script src="js/my.js"></script>
+            <script>
+    (function($){
     
-     <script src="js/nouislider.min.js"></script>
-    <script src="js/my.js"></script>
-    <script>
-      /*-------range-----------*/
-
-
-var html5Slider = document.getElementById('filter-rage'); 
-    
- noUiSlider.create(html5Slider, {
-    start: [9000, 56000],
-    connect: true, // Display a colored bar between the handles
-     step:1,
-     margin:10000,
-     pips: {mode: 'count', values: 2,density: 111000},
-     
-    range: {
-        'min': 9000,
-        'max': 120000
-    }
-});   
-    
-var inputNumber1 = document.getElementById('filter-rage-number1');
-// Append the option elements
-var inputNumber2 = document.getElementById('filter-rage-number2');
-
-html5Slider.noUiSlider.on('update', function (values, handle) {
-
-
-   
-    
-    if (handle) {
-        inputNumber2.value = ~~values[handle];
-       
-    } else {
         
-         inputNumber1.value = ~~values[handle];
-    }
-});
+        
+    })(jQuery);
 
-inputNumber1.addEventListener('change', function () {
-    html5Slider.noUiSlider.set([this.value, null]);
-});
+            
+        </script>
 
-inputNumber2.addEventListener('change', function () {
-    html5Slider.noUiSlider.set([null, this.value]);
-});  
-    
-    
-   
-    
-     /*------end-range-----------*/
-    
-    </script>
     <script src="js/twb-tabs.js"></script>
+    
 </body>
 
 </html>

@@ -407,11 +407,25 @@ $('.j-cart-many-info-slider').slick({
              
          });
     
-  
+ // jquery.nicescroll.
+     
+              $.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				
+            $("#j-comparison-tab-content").mCustomScrollbar({axis:"x",advanced:{ updateOnSelectorChange: "string" } });
+       
+    if( $(window).width() < 768){
+          
+           $(".j-table-castom-box").mCustomScrollbar({axis:"x",advanced:{ updateOnSelectorChange: "string" } });
+       }
     
+        $(window).resize(function () {
+       if( $(window).width() < 768){
+          
+           $(".j-table-castom-box").mCustomScrollbar({axis:"x",advanced:{ updateOnSelectorChange: "string" } });
+       }}); 
     
       $("input[type='tel']").mask("+7 (999) 999-99-99");
-    
+        
 });
 
 
