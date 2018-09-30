@@ -14,390 +14,8 @@
     
    
     <title></title>
-    <style>
-          .wrap {
-          max-width: 1170px !important;
-          margin: 0 auto !important; }
-
-          .about {
-          text-align: center; }
-          @media only screen and (max-width: 1200px) {
-          .about .wrap {
-          padding-left: 20px;
-          padding-right: 20px; } }
-          .about-breadcrumb {
-          text-align: left; }
-          .about-accent-header {
-          margin-top: 78px;
-          margin-bottom: 95px; }
-          @media only screen and (max-width: 1200px) {
-          .about-accent-header {
-          margin-top: 63px;
-          margin-bottom: 59px; } }
-          @media only screen and (max-width: 1000px) {
-          .about-accent-header {
-          margin-top: 0;
-          margin-bottom: 0; } }
-          .about__features-1 {
-          display: flex;
-          justify-content: space-between;
-          text-align: left;
-          margin-bottom: 150px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-1 {
-          margin-bottom: 20px; } }
-          .about__features-1__img {
-          /*  max-height: 100%; */
-          max-width: 100%;
-          display: block;
-          margin-right: 20px;
-          min-height: 600px; }
-          .about__features-1__img__box {
-          /* display: flex; */
-          width: 496px;
-          padding-right: 20px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-1__img__box {
-          width: 50%; } }
-          @media only screen and (max-width: 768px) {
-          .about__features-1__img__box {
-          display: none; } }
-          .about__features-1__info__box {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center;
-          font-family: "MuseoSansCyrl500";
-          color: #171717;
-          font-weight: 400; }
-          @media only screen and (max-width: 768px) {
-          .about__features-1__info__box {
-          width: 100%; } }
-          .about__features-1__info__header {
-          color: #171717;
-          display: block;
-          line-height: 2;
-          font-family: "MuseoSansCyrl900";
-          font-size: 30px;
-          letter-spacing: 0.75px;
-          padding-right: 30px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-1__info__header {
-          font-size: 20px;
-          line-height: 28px;
-          letter-spacing: 0.5px;
-          padding-right: 0; } }
-          @media only screen and (max-width: 768px) {
-          .about__features-1__info__header {
-          font-size: 18px;
-          line-height: 24px;
-          letter-spacing: 0.45px;
-          max-width: 650px; } }
-          .about__features-1__info__text {
-          display: block;
-          font-size: 14px;
-          letter-spacing: 0.35px;
-          line-height: 24px;
-          margin-top: -15px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-1__info__text {
-          color: #171717;
-          font-family: "MuseoSansCyrl500";
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 18px;
-          letter-spacing: 0.35px;
-          margin-top: 20px;
-          margin-bottom: 30px; } }
-          @media only screen and (max-width: 768px) {
-          .about__features-1__info__text {
-          max-width: 650px; } }
-          .about__features-1__info__img {
-          max-width: 100%;
-          display: block; }
-          .about__features-2 {
-          display: flex;
-          justify-content: space-between;
-          text-align: left;
-          margin-bottom: 130px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-2 {
-          margin-bottom: 40px; } }
-          @media only screen and (max-width: 768px) {
-          .about__features-2 {
-          flex-direction: column;
-          justify-content: center; } }
-          .about__features-2__img {
-          max-width: 100%; }
-          .about__features-2__img__box {
-          max-width: 51%; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-2__img__box {
-          max-width: 50%; } }
-          @media only screen and (max-width: 768px) {
-          .about__features-2__img__box {
-          width: 100%;
-          min-width: 280px;
-          margin: 0 auto; } }
-          .about__features-2__info {
-          width: 49%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-between;
-          padding-top: 10px;
-          padding-bottom: 30px;
-          margin: 0 auto; }
-          @media only screen and (max-width: 768px) {
-          .about__features-2__info {
-          width: 50%; } }
-          .about__features-2__info__item {
-          min-width: 225px;
-          align-self: flex-start; }
-          .about__features-2__info__item-statistic {
-          text-align: left;
-          font-size: 120px; }
-          @media only screen and (max-width: 1200px) {
-          .about__features-2__info__item-statistic {
-          font-size: 60px;
-          font-weight: 400;
-          letter-spacing: 4.5px; } }
-          .about__features-2__info__item__text {
-          color: #171717;
-          font-family: "MuseoSansCyrl500";
-          font-size: 24px;
-          font-weight: 400;
-          letter-spacing: .6px;
-          word-wrap: break-word; }
-          @media only screen and (max-width: 768px) {
-          .about__features-2__info__item__text {
-          font-size: 18px;
-          letter-spacing: 0.45px; } }
-
-          /* ------------------our-team-------------------------- */
-          .slick-next, .slick-prev {
-          opacity: .3; }
-          .slick-next:hover, .slick-prev:hover {
-          opacity: 1; }
-
-          .our-team {
-          text-align: center; }
-          @media only screen and (max-width: 768px) {
-          .our-team-accent-header {
-          margin: 0 auto; } }
-          .our-team .slick-next {
-          transform: translateY(-246%);
-          right: 23px; }
-          .our-team .slick-prev {
-          transform: translateY(-246%);
-          left: 10px; }
-          .our-team__header {
-          max-width: 800px;
-          display: block;
-          margin: 0 auto 65px;
-          color: #000000;
-          font-family: "MuseoSansCyrl300";
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 26px;
-          letter-spacing: 0.9px; }
-          @media only screen and (max-width: 768px) {
-          .our-team__header {
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: 0.6px;
-          padding-left: 10px;
-          padding-right: 10px; } }
-          .our-team__slider__item {
-          color: #1b1b1b;
-          font-weight: 400; }
-          .our-team__slider__item__img {
-          max-width: 276px;
-          max-height: 300px; }
-          @media only screen and (max-width: 768px) {
-          .our-team__slider__item__img {
-          padding-left: 0;
-          padding-right: 0;
-          margin: auto; } }
-          .our-team__slider__item__person-name {
-          display: block;
-          font-family: "BebasNeueBold";
-          font-size: 24px;
-          letter-spacing: 1.8px;
-          padding-right: calc(100% - 275px);
-          padding-top: 30px;
-          padding-bottom: 20px; }
-          @media only screen and (max-width: 768px) {
-          .our-team__slider__item__person-name {
-          padding-left: 0;
-          padding-right: 0;
-          margin: auto; } }
-          .our-team__slider__item__person-job {
-          display: block;
-          font-family: "MuseoSansCyrl300";
-          font-size: 14px;
-          padding-right: calc(100% - 275px);
-          letter-spacing: 0.35px; }
-          @media only screen and (max-width: 768px) {
-          .our-team__slider__item__person-job {
-          padding-left: 0;
-          padding-right: 0;
-          margin: auto; } }
-
-          /* ----------------------certificates --------------------------*/
-          .certificates {
-          text-align: center;
-          padding-bottom: 200px; }
-          @media only screen and (max-width: 1200px) {
-          .certificates {
-          padding-bottom: 77px; } }
-          .certificates-accent-header {
-          margin-top: 65px;
-          margin-bottom: 65px; }
-          @media only screen and (max-width: 1200px) {
-          .certificates-accent-header {
-          margin: 40px auto 30px; } }
-          .certificates .slick-next, .certificates .slick-prev {
-          opacity: .6; }
-          .certificates .slick-next:hover, .certificates .slick-prev:hover {
-          opacity: 1; }
-          .certificates__slider .slick-next {
-          transform: translate(-380%, -60%); }
-          .certificates__slider .slick-prev {
-          transform: translate(380%, -60%); }
-          .certificates__slider__item {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          max-height: 255px;
-          height: 255px;
-          max-width: 280px;
-          min-width: 171px; }
-          @media only screen and (max-width: 768px) {
-          .certificates__slider__item {
-          padding-left: 0;
-          padding-right: 0;
-          margin: auto; } }
-
-          /* ----------------------notion ------------------*/
-          .notion {
-          background: url(new_images/back.png) no-repeat top center;
-          background-size: 100% 430px; }
-          @media only screen and (max-width: 1170px) {
-          .notion {
-          background-size: 100% 536px; } }
-          @media only screen and (max-width: 768px) {
-          .notion {
-          background-size: cover; } }
-          .notion__content {
-          display: flex;
-          justify-content: center;
-          align-items: flex-end; }
-          .notion__img {
-          display: block;
-          max-width: 788px;
-          max-height: 556px;
-          margin-top: -155px;
-          margin-left: -200px; }
-          @media only screen and (max-width: 1170px) {
-          .notion__img {
-          margin-left: -380px;
-          align-self: flex-start;
-          margin-top: -22px; } }
-          @media only screen and (max-width: 768px) {
-          .notion__img {
-          display: none; } }
-          .notion__text-box {
-          align-self: center;
-          max-width: 50%;
-          /* padding: 60px 0 60px 8px; */
-          color: #ffffff;
-          font-family: "MuseoSansCyrl500";
-          font-size: 16px;
-          font-weight: 400;
-          letter-spacing: 0.4px;
-          line-height: 28px;
-          display: block;
-          margin-top: auto;
-          margin-top: 60px;
-          margin-bottom: 60px; }
-          @media only screen and (max-width: 1170px) {
-          .notion__text-box {
-          max-width: 52%;
-          margin-left: -45px;
-          padding-right: 20px; } }
-          @media only screen and (max-width: 768px) {
-          .notion__text-box {
-          max-width: 100%;
-          min-width: 277px;
-          font-size: 14pt;
-          text-align: left;
-          padding: 50px 40px;
-          margin: auto 0; } }
-          .notion__text-box__job {
-          font-family: "MuseoSansCyrl300";
-          font-size: 14px;
-          letter-spacing: 0.35px; }
-          .notion__text-box__name {
-          font-family: "MuseoSansCyrl900";
-          letter-spacing: 0.4px; }
-
-          /* ---------------------order ----------------------------*/
-          .order {
-          text-align: center;
-          padding-top: 100px;
-          padding-bottom: 100px; }
-          @media only screen and (max-width: 1200px) {
-          .order {
-          padding-top: 40px;
-          padding-bottom: 40px; } }
-          .order input::-webkit-input-placeholder {
-          font-size: 16px;
-          color: #000000;
-          text-align: left; }
-          .order .btn {
-          background-color: #ff8a01;
-          border: 1px solid #000000;
-          color: #000000; }
-          .order .section-form {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center; }
-          .order .section-form input:not([type="checkbox"]) {
-          color: #000000;
-          border-bottom-color: rgba(0, 0, 0, 0.6); }
-          .order .section-form .btn {
-          border: 1px solid #000000;
-          background-color: #ff8a01;
-          color: #000000; }
-          .order .btn:before {
-          background-color: #000000; }
-          .order .section-form .btn:hover, .order .header-btn:hover {
-          background: #c7c7c7;
-          background: #c7c7c75e;
-          transition: all .5s; }
-          .order .section-form__text-consent {
-          color: #000000;
-          font-family: "MuseoSansCyrl300";
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 20px;
-          letter-spacing: 0.3px;
-          min-width: 220px; }
-          .order input[type="checkbox"] {
-          border: 1px solid #ff8a01; }
-          .order input, .order textarea.textarea {
-          border-bottom-color: rgba(0, 0, 0, 0.6); }
-          .order input[type="checkbox"]:checked:before {
-          border: 1.5px solid #00000000;
-          border-bottom-color: #ff8a01;
-          border-right-color: #ff8a01; }
-          .order-accent-header {
-          text-transform: uppercase;
-          padding-top: 0; }
-      </style>
+  
+        
 </head>
 
 <body id="body">
@@ -500,10 +118,10 @@
            <li><a href="#" class="breadcrumb__link">Корзина</a></li>
 
         </ul>
-        <p class="accent-header accent-header__doble about-accent-header"><span></span>Корзина</p>
-          <div class="cart--header"><span class="cart-counter">В корзине 2 товара</span> <span class="delivery"> <i class="delivery-ico"></i> Доставка по Крыму 
-бесплатная!</span> <a href="#" class=" btn-simple btn-reset btn-reset__gray">Сбросить всё</a> </div>
-          
+        <p class="accent-header accent-header__doble  cart_accent-header"><span></span>Корзина</p>
+          <div class="cart--header"><span class="cart-counter">В корзине 2 товара</span> <div class="delivery"> <i class="delivery-ico"></i><span>Доставка по Крыму 
+<span class="accent-text">бесплатная!</span></span> </div> <a href="#" class=" btn-simple btn-reset btn-reset__gray">Сбросить всё</a> </div>
+          <div class="cart--content">
            <div class="card card-list j-card-list">
                 <div class="card-list-left">
                  <div class="item-tags"><span class="tag-novelty ">НОВИНКА</span> <span class="tag-hit">Хит</span>  <span class="tag-percent">25%</span> </div>
@@ -592,7 +210,6 @@
                    
                   
                    </div>
-        
            <div class="card card-list j-card-list">
                 <div class="card-list-left">
                  <div class="item-tags"><span class="tag-novelty ">НОВИНКА</span> <span class="tag-hit">Хит</span>  <span class="tag-percent">25%</span> </div>
@@ -681,13 +298,14 @@
                    
                   
                    </div>
-        
-        
+        </div>
         
         <div class="cart--footer">
-            <p>Скидка<span>— 12 000 руб.</span></p>
-            <span class="cart--footer-summ">Итого:(со скидкой): </span>
+            <p class="cart__discount">Скидка<span>— 12 000 руб.</span></p>
+            <p class="cart__price">
+                <span class="cart--footer-summ">Итого:(со скидкой): </span>
             <span class="cart--footer-summ-total">284 240 руб.</span>
+            </p>
         </div>
         
         
@@ -700,6 +318,7 @@
         <form class="section-form" action="">
            <input type="text" class="input_name" placeholder="Ваше Имя" required="">
            <input type="tel" class="input_tel" placeholder="+7 (___) ___-__-__" required="">
+           <input type="text" class="input_name" placeholder="Ваш Адрес" required="">
            <button class="btn">Отправить заявку</button>
            <label class="section-form__text-consent">
             <input type="checkbox" name="checkbox" class="checkbox orange" checked>Я даю согласие на обработку персональных данных</label>
