@@ -485,8 +485,10 @@ $('.certificates__slider').slick({
                 });
          
    function questionsInfoAnswerShow() {
+          console.log( $(window).width() );
+       
       if( ($(window).width() > 768) ) {
-           $(".questions-info-box__item--left").find(".questions-info-box__item__text").click(function(e) {
+          $(".questions-info-box__item--left").find(".questions-info-box__item__text").click(function(e) {
                 var n = $(".questions-info-box__item--left").find(".questions-info-box__item__text").index(this);
                 $(".questions-info-box__item--left").find(".questions-info-box__item__text").removeClass("show-line"),
                 $(this).addClass("show-line"),
@@ -503,8 +505,8 @@ $('.certificates__slider').slick({
              
                
                  $(".questions-info-box__item--left").find(".questions-info-box__item__text").click(function(event) {
-                      $(".questions-info-box__item--left").find(".questions-info-box__item__text__answer").hide();
-                 $(".questions-info-box__item--left").find(".questions-info-box__item__text__answer").hide();
+                $(".questions-info-box__item--left").find(".questions-info-box__item__text__answer").hide();
+            
               $(event.target).next().show();
               $(".questions-info-box__item--left").find(".questions-info-box__item__text").removeClass("show-line");
               $(this).addClass("show-line");
@@ -517,32 +519,19 @@ $('.certificates__slider').slick({
           }
 
     };
-      
-        $(window).resize(
-            questionsInfoAnswerShow());
+      questionsInfoAnswerShow();
+        $(window).resize(questionsInfoAnswerShow);
 
 
-           
+     
+ 
 
 
 
        
 
             
-            if($(window).width() < 767) {
-              $( window ).resize(function() {
-
-              $(".questions-info-box__item__text").click(function(event) {
-              $(".questions-info-box__item__text").next().hide();
-              $(event.target).next().show();
-
-
-             
-
-
-          });
-          });
-          }   
+         
     
     
      // open cart product
