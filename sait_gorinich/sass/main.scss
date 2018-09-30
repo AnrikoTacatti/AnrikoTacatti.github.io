@@ -163,9 +163,11 @@ body {
         margin-right: 0px;
         padding-left: 25px;
         padding-right: 25px;
-        height: 0;
+   
         position: relative;
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
     
 }
     
@@ -205,10 +207,18 @@ body {
     .side-left .drop-down-list-box.opened{
         display: block;
         margin-top: 120px;
+        position: absolute;
+        left: 0;
+        width: 100%;
     }
     
 }
-
+@media screen and (max-width: 1200px){
+    .news-container{
+        margin-top: 60px;
+    }
+    
+}
 @media screen and (max-width: 768px){
       .drop-down-list{
         background: #f3f3f3;
@@ -462,6 +472,8 @@ input[type="checkbox"].orange:checked:before {
 	display: block;
 	border-radius: 12px;
 	position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .switch-box label.switch-range:after {
@@ -494,11 +506,23 @@ input[type="checkbox"].orange:checked:before {
 label.right:first-child{
         color: #000;
 }
-.switch-box input ~ label:first-child{
-        color: #000;
+.switch-box input ~ label{
+        
 }
-
-
+.switch-box input ~ label:hover{
+    color: #ff8a01;
+}
+.switch-box input ~ label.left{
+     color: #ff8a01;
+}
+.switch-box input:checked ~ label.left{
+    color: #000;
+    
+}
+.switch-box input:checked ~ label.right{
+   
+    color: #ff8a01;
+}
 
 /** styled select */
 select,
@@ -3283,6 +3307,15 @@ margin-top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.accent-header__news{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105px;
+}
 .news-container .new-box {
     margin-bottom: 25px;
     margin-left: 0;
@@ -3304,15 +3337,51 @@ margin-top: 40px;
       margin-bottom: 60px;
     display: none;
 }
-
+.side-left .date span:not(:last-of-type){
+    margin-right: 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.side-left .date span.active, .side-left .date span:hover{
+        color: #ff8a01;
+    cursor: pointer;
+}
 
 @media (max-width: 1200px){
+    .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+    .news-container .new-box{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .news-container .new-box:nth-of-type(3n-1):last-child{
+      margin-left: 15px;
+    margin-right: 15px;
+    }
     .side-right-news-container{
     display: block;
         margin-left: 20px;
 }
+    .side-left__news{
+        display: flex;
+        flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+        flex-wrap: wrap;
+    }    
+    
 }
 @media (max-width: 768px){
+    
+    .accent-header__news{
+       margin-left: 20px;
+        
+    }
     .side-right-news-container{
     display: block;
         max-width: 300px;
@@ -3415,12 +3484,28 @@ margin-top: 40px;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 30px;
-    display: inline-block;
+    display: flex;
+        top: 40px;
+}
+.switch-box label:hover{
+    color: #ff8a01;
+    cursor: pointer;
+}
+.switch-box{
+    display: flex;
+    align-items: center;
+}
+.switch-box .left{
+    order: -1;
+}
+.switch-box #switch{
+    display: none;
 }
 .switch-box label{
-    color: #ff8a01;
+    color: #000;
+    cursor: pointer;
+    font-size: 24px;
 }
-
 .news-slider .slick-arrow {
     right: 0;
     left: auto;
@@ -4370,7 +4455,7 @@ display: flex;
     padding-right: 20px;
         text-align: center;
 }
-   .news .accent-header__doble,.news .switch-box{
+   .news .accent-header__doble{
         text-align: left;
        display: block;
     }
@@ -4384,7 +4469,7 @@ display: flex;
     left: 0%;
     transform: translateX(0%);
     margin-top: 0px;
-        display: block;
+      top:0;
 
 }
     
@@ -4826,6 +4911,9 @@ display: none;
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
+.cart-many-info .listing-settings{
+    height: 0;
+}
 
 .cart-many-info-head{
     font-family: "MyriadPro-Regular";
@@ -5037,6 +5125,13 @@ opacity:0.1;
 /*---------------------*@media (max-width: 1400px)*/
 
 }
+@media (max-width: 1200px){
+    .cart-many-info .listing-settings{
+    height: 40px;
+   justify-content: flex-start;
+        margin-bottom: 15px;
+}
+}
 
  
 @media (max-width: 768px){
@@ -5054,6 +5149,7 @@ opacity:0.1;
     font-size: 18px;
     justify-content: flex-end;
     font-family: "BebasNeueBold";
+    width: 100%;
 }
 
 .listing-settings .select-field{
@@ -6270,5 +6366,9 @@ color: rgba(0, 117, 191, 255);
         font-size: 18px;}
 .cart__price .cart--footer-summ-total {
     font-size: 21px;}
+    
+  .card.card-list .close-content {
+    right: 0px;
+     top: 12px;  } 
     
 }
