@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+    
+   
+    <title></title>
+    <style>
+          .wrap {
+          max-width: 1170px !important;
+          margin: 0 auto !important; }
+
+          .about {
+          text-align: center; }
+          @media only screen and (max-width: 1200px) {
+          .about .wrap {
+          padding-left: 20px;
+          padding-right: 20px; } }
+          .about-breadcrumb {
+          text-align: left; }
+          .about-accent-header {
+          margin-top: 78px;
+          margin-bottom: 95px; }
+          @media only screen and (max-width: 1200px) {
+          .about-accent-header {
+          margin-top: 63px;
+          margin-bottom: 59px; } }
+          @media only screen and (max-width: 1000px) {
+          .about-accent-header {
+          margin-top: 0;
+          margin-bottom: 0; } }
+          .about__features-1 {
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+          margin-bottom: 150px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-1 {
+          margin-bottom: 20px; } }
+          .about__features-1__img {
+          /*  max-height: 100%; */
+          max-width: 100%;
+          display: block;
+          margin-right: 20px;
+          min-height: 600px; }
+          .about__features-1__img__box {
+          /* display: flex; */
+          width: 496px;
+          padding-right: 20px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-1__img__box {
+          width: 50%; } }
+          @media only screen and (max-width: 768px) {
+          .about__features-1__img__box {
+          display: none; } }
+          .about__features-1__info__box {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          font-family: "MuseoSansCyrl500";
+          color: #171717;
+          font-weight: 400; }
+          @media only screen and (max-width: 768px) {
+          .about__features-1__info__box {
+          width: 100%; } }
+          .about__features-1__info__header {
+          color: #171717;
+          display: block;
+          line-height: 2;
+          font-family: "MuseoSansCyrl900";
+          font-size: 30px;
+          letter-spacing: 0.75px;
+          padding-right: 30px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-1__info__header {
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0.5px;
+          padding-right: 0; } }
+          @media only screen and (max-width: 768px) {
+          .about__features-1__info__header {
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.45px;
+          max-width: 650px; } }
+          .about__features-1__info__text {
+          display: block;
+          font-size: 14px;
+          letter-spacing: 0.35px;
+          line-height: 24px;
+          margin-top: -15px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-1__info__text {
+          color: #171717;
+          font-family: "MuseoSansCyrl500";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0.35px;
+          margin-top: 20px;
+          margin-bottom: 30px; } }
+          @media only screen and (max-width: 768px) {
+          .about__features-1__info__text {
+          max-width: 650px; } }
+          .about__features-1__info__img {
+          max-width: 100%;
+          display: block; }
+          .about__features-2 {
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+          margin-bottom: 130px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-2 {
+          margin-bottom: 40px; } }
+          @media only screen and (max-width: 768px) {
+          .about__features-2 {
+          flex-direction: column;
+          justify-content: center; } }
+          .about__features-2__img {
+          max-width: 100%; }
+          .about__features-2__img__box {
+          max-width: 51%; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-2__img__box {
+          max-width: 50%; } }
+          @media only screen and (max-width: 768px) {
+          .about__features-2__img__box {
+          width: 100%;
+          min-width: 280px;
+          margin: 0 auto; } }
+          .about__features-2__info {
+          width: 49%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-top: 10px;
+          padding-bottom: 30px;
+          margin: 0 auto; }
+          @media only screen and (max-width: 768px) {
+          .about__features-2__info {
+          width: 50%; } }
+          .about__features-2__info__item {
+          min-width: 225px;
+          align-self: flex-start; }
+          .about__features-2__info__item-statistic {
+          text-align: left;
+          font-size: 120px; }
+          @media only screen and (max-width: 1200px) {
+          .about__features-2__info__item-statistic {
+          font-size: 60px;
+          font-weight: 400;
+          letter-spacing: 4.5px; } }
+          .about__features-2__info__item__text {
+          color: #171717;
+          font-family: "MuseoSansCyrl500";
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: .6px;
+          word-wrap: break-word; }
+          @media only screen and (max-width: 768px) {
+          .about__features-2__info__item__text {
+          font-size: 18px;
+          letter-spacing: 0.45px; } }
+
+          /* ------------------our-team-------------------------- */
+          .slick-next, .slick-prev {
+          opacity: .3; }
+          .slick-next:hover, .slick-prev:hover {
+          opacity: 1; }
+
+          .our-team {
+          text-align: center; }
+          @media only screen and (max-width: 768px) {
+          .our-team-accent-header {
+          margin: 0 auto; } }
+          .our-team .slick-next {
+          transform: translateY(-246%);
+          right: 23px; }
+          .our-team .slick-prev {
+          transform: translateY(-246%);
+          left: 10px; }
+          .our-team__header {
+          max-width: 800px;
+          display: block;
+          margin: 0 auto 65px;
+          color: #000000;
+          font-family: "MuseoSansCyrl300";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0.9px; }
+          @media only screen and (max-width: 768px) {
+          .our-team__header {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.6px;
+          padding-left: 10px;
+          padding-right: 10px; } }
+          .our-team__slider__item {
+          color: #1b1b1b;
+          font-weight: 400; }
+          .our-team__slider__item__img {
+          max-width: 276px;
+          max-height: 300px; }
+          @media only screen and (max-width: 768px) {
+          .our-team__slider__item__img {
+          padding-left: 0;
+          padding-right: 0;
+          margin: auto; } }
+          .our-team__slider__item__person-name {
+          display: block;
+          font-family: "BebasNeueBold";
+          font-size: 24px;
+          letter-spacing: 1.8px;
+          padding-right: calc(100% - 275px);
+          padding-top: 30px;
+          padding-bottom: 20px; }
+          @media only screen and (max-width: 768px) {
+          .our-team__slider__item__person-name {
+          padding-left: 0;
+          padding-right: 0;
+          margin: auto; } }
+          .our-team__slider__item__person-job {
+          display: block;
+          font-family: "MuseoSansCyrl300";
+          font-size: 14px;
+          padding-right: calc(100% - 275px);
+          letter-spacing: 0.35px; }
+          @media only screen and (max-width: 768px) {
+          .our-team__slider__item__person-job {
+          padding-left: 0;
+          padding-right: 0;
+          margin: auto; } }
+
+          /* ----------------------certificates --------------------------*/
+          .certificates {
+          text-align: center;
+          padding-bottom: 200px; }
+          @media only screen and (max-width: 1200px) {
+          .certificates {
+          padding-bottom: 77px; } }
+          .certificates-accent-header {
+          margin-top: 65px;
+          margin-bottom: 65px; }
+          @media only screen and (max-width: 1200px) {
+          .certificates-accent-header {
+          margin: 40px auto 30px; } }
+          .certificates .slick-next, .certificates .slick-prev {
+          opacity: .6; }
+          .certificates .slick-next:hover, .certificates .slick-prev:hover {
+          opacity: 1; }
+          .certificates__slider .slick-next {
+          transform: translate(-380%, -60%); }
+          .certificates__slider .slick-prev {
+          transform: translate(380%, -60%); }
+          .certificates__slider__item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-height: 255px;
+          height: 255px;
+          max-width: 280px;
+          min-width: 171px; }
+          @media only screen and (max-width: 768px) {
+          .certificates__slider__item {
+          padding-left: 0;
+          padding-right: 0;
+          margin: auto; } }
+
+          /* ----------------------notion ------------------*/
+          .notion {
+          background: url(new_images/back.png) no-repeat top center;
+          background-size: 100% 430px; }
+          @media only screen and (max-width: 1170px) {
+          .notion {
+          background-size: 100% 536px; } }
+          @media only screen and (max-width: 768px) {
+          .notion {
+          background-size: cover; } }
+          .notion__content {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end; }
+          .notion__img {
+          display: block;
+          max-width: 788px;
+          max-height: 556px;
+          margin-top: -155px;
+          margin-left: -200px; }
+          @media only screen and (max-width: 1170px) {
+          .notion__img {
+          margin-left: -380px;
+          align-self: flex-start;
+          margin-top: -22px; } }
+          @media only screen and (max-width: 768px) {
+          .notion__img {
+          display: none; } }
+          .notion__text-box {
+          align-self: center;
+          max-width: 50%;
+          /* padding: 60px 0 60px 8px; */
+          color: #ffffff;
+          font-family: "MuseoSansCyrl500";
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          line-height: 28px;
+          display: block;
+          margin-top: auto;
+          margin-top: 60px;
+          margin-bottom: 60px; }
+          @media only screen and (max-width: 1170px) {
+          .notion__text-box {
+          max-width: 52%;
+          margin-left: -45px;
+          padding-right: 20px; } }
+          @media only screen and (max-width: 768px) {
+          .notion__text-box {
+          max-width: 100%;
+          min-width: 277px;
+          font-size: 14pt;
+          text-align: left;
+          padding: 50px 40px;
+          margin: auto 0; } }
+          .notion__text-box__job {
+          font-family: "MuseoSansCyrl300";
+          font-size: 14px;
+          letter-spacing: 0.35px; }
+          .notion__text-box__name {
+          font-family: "MuseoSansCyrl900";
+          letter-spacing: 0.4px; }
+
+          /* ---------------------order ----------------------------*/
+          .order {
+          text-align: center;
+          padding-top: 100px;
+          padding-bottom: 100px; }
+          @media only screen and (max-width: 1200px) {
+          .order {
+          padding-top: 40px;
+          padding-bottom: 40px; } }
+          .order input::-webkit-input-placeholder {
+          font-size: 16px;
+          color: #000000;
+          text-align: left; }
+          .order .btn {
+          background-color: #ff8a01;
+          border: 1px solid #000000;
+          color: #000000; }
+          .order .section-form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; }
+          .order .section-form input:not([type="checkbox"]) {
+          color: #000000;
+          border-bottom-color: rgba(0, 0, 0, 0.6); }
+          .order .section-form .btn {
+          border: 1px solid #000000;
+          background-color: #ff8a01;
+          color: #000000; }
+          .order .btn:before {
+          background-color: #000000; }
+          .order .section-form .btn:hover, .order .header-btn:hover {
+          background: #c7c7c7;
+          background: #c7c7c75e;
+          transition: all .5s; }
+          .order .section-form__text-consent {
+          color: #000000;
+          font-family: "MuseoSansCyrl300";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+          min-width: 220px; }
+          .order input[type="checkbox"] {
+          border: 1px solid #ff8a01; }
+          .order input, .order textarea.textarea {
+          border-bottom-color: rgba(0, 0, 0, 0.6); }
+          .order input[type="checkbox"]:checked:before {
+          border: 1.5px solid #00000000;
+          border-bottom-color: #ff8a01;
+          border-right-color: #ff8a01; }
+          .order-accent-header {
+          text-transform: uppercase;
+          padding-top: 0; }
+      </style>
+</head>
+
+<body id="body">
+    <section class="menu menu-second">
+        <div class="menu__menu-box">
+            <div class="menu__menu-box__box-logo-serch">
+                <div class="menu__menu-box__box-logo-serch__logo-menu j-open-scroll-menu">
+                    <div class="hamburger-icon  ">
+                        <div class="top"></div>
+                        <div class="middle"></div>
+                        <div class="middle-second"></div>
+                        <div class="bottom"></div>
+                    </div> 
+                    <span class="menu__menu-box__box-logo-serch__logo-menu__hamburger-icon-text">Меню</span>
+                     
+                    </div>
+                <div class="menu__menu-box__box-logo-serch__search-box j-open-search-form">
+                    <i class="search-ico" ></i> 
+                 <span class="menu__menu-box__box-logo-serch__search-text">Поиск</span> </div>
+            </div>
+          
+            <div class="logo">
+                <a href="#home"><img src="img/logo.png" alt=""> </a>
+            </div>
+          
+            <div class="menu__menu-box__contacts">
+               <a href="tel:+7 (978) 127-23-33" class="tel">+7 (978) 127-23-33</a>
+                <button class="call__back-btn j-btn-form-сallback">Заказать звонок</button>
+            </div>
+            <div class="menu-user-buttons menu__menu-box__menu-user-buttons">
+                <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i><span>03</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"></i><span>02</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i><span>01</span></a>
+            </div>
+            
+        </div>
+          <ul class="menu__menu-box__scroll-menu j-menu__menu-box__scroll-menu">
+               
+                <li class="menu__menu-box__scroll-menu__list__item">
+                    <button title="Close (Esc)" type="button" class="close j-close">×</button>
+                </li>
+                
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#home"> Главная</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item hamburger-icon-ico"><a class="" href="#">Каталог </a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">Доставка и оплата</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item active"><a class="" href="#">О компании</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">Наши работы</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#question">Вопрос/Ответ</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">новости</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#">отзывы</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item"><a class="" href="#contacts">Контакты</a></li>
+                <li class="menu__menu-box__scroll-menu__list__item">
+                <div class="menu-user-buttons">
+              
+                        <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i> Корзина <span>01</span></a>
+                        <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"> </i> Отложенные <span>02</span></a>
+                        <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i> Сравнение <span>03</span></a>
+                 </div>
+               </li>
+                <li class="menu__menu-box__scroll-menu__list__item">
+                   <a href="tel:+7 (978) 127-23-33" class=" tel">+7 (978) 127-23-33</a>
+                   <a href="viber://add?number=7 (978) 127-23-33" class=" tel"><i class="viber-ico"></i></a> 
+                   <a href="whatsapp://send?phone=+7 (978) 127-23-33" class=" tel"><i class="whatsapp-ico"></i></a>
+                   <br> <a href="mailto:domkamin@gmail.com" class="email">domkamin@gmail.com</a>
+                   <div class="box-soc-icons"> 
+                       <a href=""><i class="vk-ico"></i></a> 
+                       <a href=""><i class="insta-ico"></i></a> 
+                       <a href=""><i class="fb-ico"></i></a> 
+                       <a href=""><i class="youtube-ico"></i></a> 
+                       <a href=""><i class="ok-ico"></i></a> 
+                   </div>
+                </li>
+            </ul>
+        
+          <form class="search-form"> 
+              
+                <label for="" class="search-form__label-search">
+                    <input type="text" class="search-form__input-search" placeholder="найти товар">
+                    <button class="btn btn-search">Найти</button>
+                    <button title="Close (Esc)" type="button" class="form-close j-close">×</button>
+                </label>
+            </form>
+         <div class="menu-user-buttons ">
+              
+                <a href="#" class="menu-user-buttons__button"><i class="cart-ico"></i><span>01</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="add_to_liked add_to_liked-ico"></i><span>02</span></a>
+                <a href="#" class="menu-user-buttons__button"><i class="rating-ico"></i><span>03</span></a>
+            </div>
+        
+        
+    </section>
+
+
+  
+  
+    
+      <div class="wrap">
+        <ul class="breadcrumb about-breadcrumb">
+           <li><a href="#" class="breadcrumb__link">Главная   </a> <span class="divider">/</span></li>
+           <li><a href="#" class="breadcrumb__link">Корзина</a></li>
+
+        </ul>
+        <p class="accent-header accent-header__doble about-accent-header"><span></span>Корзина</p>
+          <div class="cart--header"><span class="cart-counter">В корзине 2 товара</span> <span class="delivery"> <i class="delivery-ico"></i> Доставка по Крыму 
+бесплатная!</span> <a href="#" class=" btn-simple btn-reset btn-reset__gray">Сбросить всё</a> </div>
+          
+           <div class="card card-list j-card-list">
+                <div class="card-list-left">
+                 <div class="item-tags"><span class="tag-novelty ">НОВИНКА</span> <span class="tag-hit">Хит</span>  <span class="tag-percent">25%</span> </div>
+                 
+                  <div class="card__img--box">
+                     <img src="img/product-1.png" alt="Product-1" class="card__img">
+                  </div>
+                  <div class="card__preview">
+                     <a href="#" class="btn js-btn-opened__cart-many-info-form">Быстрый просмотр</a>
+                  </div>
+                  </div>
+                  <div class="card-list-ifo-box"> 
+                  <h3 class="card__title">Kratki MB 120</h3> 
+                  <div class="card-list-ifo-box-ifo j-card-list-ifo-box-ifo">
+                
+              <table class="table">
+               <tbody>
+                <tr>
+                    <td>Тип:</td>
+                    <td>  Дровяные </td>
+                </tr>
+                <tr>
+                    <td>Вид:</td>
+                    <td> Топка </td>
+                </tr>
+                <tr>
+                    <td>Материал:</td>
+                    <td> Чугун + стекло</td>
+                </tr>
+                  <tr>
+                    <td> Мощность:</td>
+                    <td> 10 кВт</td>
+                </tr>
+              
+                
+                <tr>
+                    <td>Ширина:</td>
+                    <td> 600</td>
+                </tr>
+                 <tr>
+                    <td>Высота:</td>
+                    <td> 622 </td>
+                </tr>
+                 <tr>
+                    <td>Глубина:</td>
+                    <td> 416 </td>
+                </tr>
+                 <tr>
+                    <td>Вес:</td>
+                    <td> 94 </td>
+                </tr>
+                 <tr>
+                    <td>Страна-производитель:	</td>
+                    <td> Польша </td>
+                </tr>
+            </tbody>
+            </table>
+                 
+                      </div>
+                   <div class="card-list-ifo-box-specification j-card-list-ifo-box-specification"><span>Характеристики</span></div>  
+                     <div class="card-ico-box">
+                       <p class="add_to_liked-text"><i class="add_to_liked add_to_liked-ico"></i>Сравнить</p>
+                       <p class="rating-ico-text">  <i class="rating-ico"></i>Отложить</p>
+                   </div> 
+                  </div>
+                      
+                 <div class="card-list-right">
+                  <div class="card__price-box">
+                  <p class="discount card__discount">32 340 руб.</p>
+                   <p class="card__price accent-text"><span>9 750</span> руб.</p>
+                   <p class="card__econom"><span>экономия: <br></span>12 000 руб.</p>
+                   
+                   </div> 
+                  
+                  <div class="card__buy-block">
+                     <a href="#" class="btn btn-orange btn-cart">Купить</a>
+                  </div>
+                  <div class="product-count product-count__small">
+
+							<div class="btn-count btn-count-minus" onselectstart="return false" onmousedown="return false">‒</div>
+							<input type="text" name="n1" id="n1" value="1">
+							<div class="btn-count btn-count-plus" onselectstart="return false" onmousedown="return false">+</div>
+
+						</div>
+                  </div>
+                   
+                  
+                   </div>
+        
+           <div class="card card-list j-card-list">
+                <div class="card-list-left">
+                 <div class="item-tags"><span class="tag-novelty ">НОВИНКА</span> <span class="tag-hit">Хит</span>  <span class="tag-percent">25%</span> </div>
+                 
+                  <div class="card__img--box">
+                     <img src="img/product-1.png" alt="Product-1" class="card__img">
+                  </div>
+                  <div class="card__preview">
+                     <a href="#" class="btn js-btn-opened__cart-many-info-form">Быстрый просмотр</a>
+                  </div>
+                  </div>
+                  <div class="card-list-ifo-box"> 
+                  <h3 class="card__title">Kratki MB 120</h3> 
+                  <div class="card-list-ifo-box-ifo j-card-list-ifo-box-ifo">
+                
+              <table class="table">
+               <tbody>
+                <tr>
+                    <td>Тип:</td>
+                    <td>  Дровяные </td>
+                </tr>
+                <tr>
+                    <td>Вид:</td>
+                    <td> Топка </td>
+                </tr>
+                <tr>
+                    <td>Материал:</td>
+                    <td> Чугун + стекло</td>
+                </tr>
+                  <tr>
+                    <td> Мощность:</td>
+                    <td> 10 кВт</td>
+                </tr>
+              
+                
+                <tr>
+                    <td>Ширина:</td>
+                    <td> 600</td>
+                </tr>
+                 <tr>
+                    <td>Высота:</td>
+                    <td> 622 </td>
+                </tr>
+                 <tr>
+                    <td>Глубина:</td>
+                    <td> 416 </td>
+                </tr>
+                 <tr>
+                    <td>Вес:</td>
+                    <td> 94 </td>
+                </tr>
+                 <tr>
+                    <td>Страна-производитель:	</td>
+                    <td> Польша </td>
+                </tr>
+            </tbody>
+            </table>
+                 
+                      </div>
+                   <div class="card-list-ifo-box-specification j-card-list-ifo-box-specification"><span>Характеристики</span></div>  
+                     <div class="card-ico-box">
+                       <p class="add_to_liked-text"><i class="add_to_liked add_to_liked-ico"></i>Сравнить</p>
+                       <p class="rating-ico-text">  <i class="rating-ico"></i>Отложить</p>
+                   </div> 
+                  </div>
+                      
+                 <div class="card-list-right">
+                  <div class="card__price-box">
+                  <p class="discount card__discount">32 340 руб.</p>
+                   <p class="card__price accent-text"><span>9 750</span> руб.</p>
+                   <p class="card__econom"><span>экономия: <br></span>12 000 руб.</p>
+                   
+                   </div> 
+                  
+                  <div class="card__buy-block">
+                     <a href="#" class="btn btn-orange btn-cart">Купить</a>
+                  </div>
+                  <div class="product-count product-count__small">
+
+							<div class="btn-count btn-count-minus" onselectstart="return false" onmousedown="return false">‒</div>
+							<input type="text" name="n1" id="n1" value="1">
+							<div class="btn-count btn-count-plus" onselectstart="return false" onmousedown="return false">+</div>
+
+						</div>
+                  </div>
+                   
+                  
+                   </div>
+        
+        
+        
+        <div class="cart--footer">
+            <p>Скидка<span>— 12 000 руб.</span></p>
+            <span class="cart--footer-summ">Итого:(со скидкой): </span>
+            <span class="cart--footer-summ-total">284 240 руб.</span>
+        </div>
+        
+        
+        
+    </div>
+        
+    <section class="order">
+      <div class="wrap">
+        <p class="accent-header accent-header__doble order-accent-header">Оформить заказ</p>
+        <form class="section-form" action="">
+           <input type="text" class="input_name" placeholder="Ваше Имя" required="">
+           <input type="tel" class="input_tel" placeholder="+7 (___) ___-__-__" required="">
+           <button class="btn">Отправить заявку</button>
+           <label class="section-form__text-consent">
+            <input type="checkbox" name="checkbox" class="checkbox orange" checked>Я даю согласие на обработку персональных данных</label>
+       </form>
+      </div>
+    </section>
+          
+      
+    <section class="footer-before">
+        <p class="accent-header accent-header-big">СКИДКИ НА КАМИНЫ ИЗ МРАМОРА ДО 50%</p>
+        <p class="accent-header accent-header-small">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ НА КАМИННЫЕ ТОПКИ</p>
+        
+        <p class="text">Скидки распространяются на выставочные модели порталов каминов, при комплексном заказе с монтажом. За подробностями текущих акций и спецпредложений 
+<br> обращайтесь к нашим менеджерам.</p>
+       
+       <form class="section-form" action="">
+           <input type="tel" class="input_tel" placeholder="+7 (___) ___-__-__" required="">
+           <button  class="btn">Заказать звонок</button>
+           
+       </form>
+        
+    </section>
+    
+    <footer class="footer">
+       <div class="footer-container">
+        <div class="footer-contact"><div class="logo">
+            <a href="/"><img src="img/logo.png" alt=""> </a></div>
+                <br>
+                  <div><p>Позвоните нам:<br></p>
+                   <a href="tel:+7 (978) 127-23-33" class=" tel">+7 (978) 127-23-33</a>
+                   <a href="viber://add?number=7 (978) 127-23-33" class=" tel"><i class="viber-ico"></i></a> 
+                   <a href="whatsapp://send?phone=+7 (978) 127-23-33" class=" tel"><i class="whatsapp-ico"></i></a></div>
+                   <div>
+                   <p>E-mail: <br></p>
+                  <a href="mailto:domkamin@gmail.com" class="email">domkamin@gmail.com</a></div>
+                   <div class="box-soc-icons"> 
+                       <a href=""><i class="vk-ico"></i></a> 
+                       <a href=""><i class="insta-ico"></i></a> 
+                       <a href=""><i class="fb-ico"></i></a> 
+                       <a href=""><i class="youtube-ico"></i></a> 
+                       <a href=""><i class="ok-ico"></i></a> 
+                   </div>
+                 
+            </div>
+        <div>
+           <h2>Категории</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" >Услуги  </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Камины </a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Изделия из мрамора </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Топки </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Печи-камины </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Электрокамины</a></div>
+                 <div class="itemMenuBottom"><a href="" rel="nofollow" >Биокамины | Газовые камины </a></div>
+                  <div class="itemMenuBottom"><a href="" rel="nofollow" >Дымоходы </a></div>
+                   <div class="itemMenuBottom"><a href="" rel="nofollow" >Барбекю</a></div>
+                    <div class="itemMenuBottom"><a href="" rel="nofollow" >Дизайнерские камины</a></div>
+                 
+        </div>
+
+        
+        
+        <div>
+           <h2>Услуги</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" > Камины на заказ </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Консультации </a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Изделия из мрамора </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Проектирование и дизайн </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Монтаж каминов </a></div>
+                 <div class="itemMenuBottom"><a href="" rel="nofollow" >Выезд на объект </a></div>
+                   <div class="itemMenuBottom"><a href="" rel="nofollow" >Выбор мрамора</a></div>
+                    <div class="itemMenuBottom"><a href="" rel="nofollow" >Сервис и гарантия</a></div>
+        </div>
+        <div>
+           <h2>Информация</h2>
+            <div class="itemMenuBottom"><a href="" rel="nofollow" >О компании </a></div>
+             <div class="itemMenuBottom"><a href="" rel="nofollow" >Производство каминов</a></div>
+              <div class="itemMenuBottom"><a href="" rel="nofollow" >Оплата </a></div>
+               <div class="itemMenuBottom"><a href="" rel="nofollow" >Доставка </a></div>
+                <div class="itemMenuBottom"><a href="" rel="nofollow" >Контакты </a></div>
+                
+                <a href="img/copyright-logo.png" class="cjart" rel="nofollow"><img src="data:image/png;base64,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" alt=""><span>Создано с огоньком</span> <i class="flame-ico"></i></a>
+                
+        </div>
+    
+        <a href="#body" class="totop"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAEBElEQVRYhc2YTY8VRRSGn7o0jDozOCOS+CNYAA4fw9aQQAxEExIXEglx50p/gDOBv8EGwocE0ERICG4MCx3DoHFhJCFRN7KCQBDHkenq7mIx1XfqVp/6aGYWnOSmbled89Zb55w+VdXKfInhFZfCUlQo2FC6Ll4E+/TmU1GYOT1viqGxD7Je0iHbDOK+/ipJJQC3/Rvh3RCxTOxVkqlVb5T4eDn4zVpOhkGV0/r965FcBxgoaIQJpRRobOuGTAqjvxhpvM8iRzyZGwpJP2Ur6a7Lk1KIpZdI0gmNhQjneLMJvTg53o15JNdb2SVIyjX/WbGWk/64VKZS3pXyNySNS9IF9cOcIzFdKXXc+XqRdEGl/ylJlbOXwRzJSX91od0m9sIAbOMI8A6POROdPHc3a6CgjhiFCrk17uhtZxdw3ZJd5hEXcw8acZJSsW7JxCZwiTfA2+yg5mfH/gJvUfKYq0MsaePIIDmgscZt2Bugtq3fH/pNs5+KX6gYoFmm4gE1UHOFN/l4aC/hpGSkBElvp5+v/hjAFLvR/AgMrN5+DH8BD1BMYbjAJAX/cC6IEZNgCUqBtc8T7GCFBYfgUf7lNxQwzh7gVxQTGM7yBisscTmDVofkYMT1bphjPwOMsZuKn9CMoYGSYzzjxjCkz/iDin1o/rfjXzHGh505epNM5V77GzCL5g4lE2hA8x7LfN3B+o97lOxC89AS/YaCE31Jxg+9kihm0NwGCttzCMP3Qf0V7qM4ANwFpoGzgMZwKWu+Bgoqr3NAeIU1e4HbwBbbc5RNfCfajT7/Sc0sirsYJoGLKEoGXEuSrP1wN0CFHOLnzFCygOZ1G7r3UdwI2vnPA+5TMkvJI2t/leccT5Ls5GQoN5fYSckiFZvsBIfZws2OXuq54Hcq3kXzlBLQnJ9bnP8kTVICrlmrkU85QskiJYoSKPmA17glEvHfXBen7Rvjb0r2oFmyeOfmfpj/vJ8nuxN9RMVmKkBzmHG+HS4ktTv5C2ifx215qli21eGzGMliCOZLu1dv5ThP0BjusI1bw4lcnZBtaL83wCT3eMJB4AsUnwZJGvcU5AM1rB0KpjgJrHrDPxHFboluKx0wplk4PXNqIUjQ8ujeu1P3mNytMzT+Ukc1d3UxAOluEjp/ktDrTdINYeiA65NItSGSkn4WyTavQjc/V6Rck1pJX/ry0euo1gKkPAnd1ccW53pMSqteV9oQMSkkvr5k4xJEaCW7kJj2JBNaZexNlvR8jNA9qc+FrHN98IlI/dIEobLlfvnwv4LkkhTrZEpyCKbG+sxpfJJ9y4NrI/W5Y1JK5MzRIbl67hsFlcTV83Xbsdq2fTwfIKnMAUxw/419AQ7p+ARiBTzTmy8AndVj2eb6kJAAAAAASUVORK5CYII=" alt=""></a>
+        </div>
+    </footer>
+    
+    
+
+    
+    
+    
+   
+    
+    
+     
+    
+    
+    
+    
+    
+    
+ 
+   
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    
+     
+    <script src="js/my.js"></script>
+    
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

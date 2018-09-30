@@ -268,6 +268,80 @@ $('.j-cart-many-info-slider').slick({
         }]
     });
   
+    $('.our-team__slider').slick({
+        slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: false,
+          centerMode: true,
+          centerPadding: '0px',
+          focusOnSelect: true,
+           infinite: true,
+           centerPadding: 15,
+           responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerPadding: 0
+              }
+            }
+            
+           
+          ]
+      }); 
+
+$('.certificates__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+     centerPadding: '0px',
+        centerMode: true,
+        /*centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true,*/
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          
+         
+        ]
+      }); 
+    
+    
   /*------.drop-down-list-----------*/   
      $(".j-drop-down-list").find(".drop-down-list__tab").click(function (e) {
          
@@ -410,6 +484,66 @@ $('.j-cart-many-info-slider').slick({
                     input.val(count);
                 });
          
+   function questionsInfoAnswerShow() {
+      if( ($(window).width() > 768) ) {
+           $(".questions-info-box__item--left").find(".questions-info-box__item__text").click(function(e) {
+                var n = $(".questions-info-box__item--left").find(".questions-info-box__item__text").index(this);
+                $(".questions-info-box__item--left").find(".questions-info-box__item__text").removeClass("show-line"),
+                $(this).addClass("show-line"),
+                $(".questions-info-box__item--right").find(".questions-info-box__item__text").hide(),
+                $(".questions-info-box__item--right").find(".questions-info-box__item__text").eq(n).show();
+
+
+               
+            });
+         
+        }
+
+        if($(window).width() < 769) {
+             
+               
+                 $(".questions-info-box__item--left").find(".questions-info-box__item__text").click(function(event) {
+                      $(".questions-info-box__item--left").find(".questions-info-box__item__text__answer").hide();
+                 $(".questions-info-box__item--left").find(".questions-info-box__item__text__answer").hide();
+              $(event.target).next().show();
+              $(".questions-info-box__item--left").find(".questions-info-box__item__text").removeClass("show-line");
+              $(this).addClass("show-line");
+
+             
+
+
+
+          });
+          }
+
+    };
+      
+        $(window).resize(
+            questionsInfoAnswerShow());
+
+
+           
+
+
+
+       
+
+            
+            if($(window).width() < 767) {
+              $( window ).resize(function() {
+
+              $(".questions-info-box__item__text").click(function(event) {
+              $(".questions-info-box__item__text").next().hide();
+              $(event.target).next().show();
+
+
+             
+
+
+          });
+          });
+          }   
+    
     
      // open cart product
          $('.j-card-list-ifo-box-specification').on('click', function () {
