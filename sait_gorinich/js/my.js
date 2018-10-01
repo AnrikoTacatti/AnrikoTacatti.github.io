@@ -534,7 +534,7 @@ $('.certificates__slider').slick({
      
  
 
-
+$('[data-fancybox="gallery"]').fancybox({});
 
        
 
