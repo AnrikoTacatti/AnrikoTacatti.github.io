@@ -419,6 +419,11 @@ $('.certificates__slider').slick({
       return false;
     });
     
+    $("#message-send-ok").find(".btn").click(function(){
+        $(this).parents("#message-send-ok").removeClass("opened");
+        
+    });
+    
      $(".j-switch").click(function(){
         if($(this).is(':checked')){
               $(this).prev().css("color","#000");

@@ -2031,6 +2031,9 @@ background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAY
     line-height: 16px;
     cursor: pointer;
 }
+.close-content:hover{
+    opacity: 0.5;
+}
 .search-form .form-close{
     position: absolute;
     right: -115px;
