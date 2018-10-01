@@ -2199,19 +2199,22 @@ top:0;
   right: 14px;
   line-height: 21px; }
 
-.menu-second .menu__menu-box__contacts, .menu-user-buttons {
-  display: none; }
+/*.menu-second .menu__menu-box__contacts, .menu-user-buttons {
+  display: none; }*/
 
 .menu__menu-box__menu-user-buttons.menu-user-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
   .menu__menu-box__menu-user-buttons.menu-user-buttons {
     display: none; }
   .menu-second .menu__menu-box__contacts, .menu-user-buttons {
-    display: block; } }
+    display: block; } }*/
+
+
+
 
 /*--------------------------------------TAB---------------------------------------------------------------*/
 
