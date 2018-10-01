@@ -1688,9 +1688,9 @@ div.drop-down-list__tab_content {
   -webkit-transition: all .5s;
   transition: all .5s; }
 
-@media (max-width: 1400px) {
+@media (min-width: 767px) and (max-width: 1400px) {
   .menu .logo img {
-    height: 115px; }
+    max-height: 115px; }
   .header .header-front__slider-content {
     margin-top: 220px; } }
 
