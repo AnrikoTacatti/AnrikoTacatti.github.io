@@ -437,8 +437,16 @@ $('.certificates__slider').slick({
     $(".j-drop-down-list-category").toggleClass("opened"); 
     $(".j-drop-down-filter").removeClass("opened");
  });
+       $(".tile-ico").click(function(){
+   
+    $(".j-card").removeClass("card-list");
+ });
+       $(".list-ico").click(function(){
+   
+    $(".j-card").addClass("card-list");
+ });
     
-    
+ 
      
      //menu scroll yakora# скрол по якорям
     $(".totop").on("click", function (event) {
