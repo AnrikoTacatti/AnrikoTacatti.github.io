@@ -2206,7 +2206,7 @@ top:0;
     margin-bottom: -15px;
     z-index: 10;
 }
-.twb-tabs-slide-tov .card.card-small{
+.twb-tabs-slide-tov .card.card-small,.slider-card .card.card-small{
     width: 200px;
     height: auto;
     margin-left: 10px;
@@ -2215,7 +2215,7 @@ top:0;
     z-index: auto;
 }
 
-.twb-tabs-slide-tov .card:hover::before{
+.twb-tabs-slide-tov .card:hover::before, .slider-card .card:hover::before{
        left: -10px;
     right: -10px;
     top: -10px;
@@ -2309,18 +2309,18 @@ top:0;
 	padding: 15px;
 
 }
-.twb-tabs .twb-tab-content .slick-arrow{
+.twb-tabs .twb-tab-content .slick-arrow, .slider-card  .slick-arrow{
     opacity: 0.2;
     transition: .5s;
 }
-.twb-tabs .twb-tab-content .slick-arrow:hover{
+.twb-tabs .twb-tab-content .slick-arrow:hover,.slider-card .slick-arrow:hover{
     opacity: 1;
 }
 @media (max-width: 1200px){
-   .twb-tabs .twb-tab-content .slick-next {
+   .twb-tabs .twb-tab-content .slick-next,.slider-card .slick-next {
     right: 0px;
 }
-    .twb-tabs .twb-tab-content .slick-prev{
+    .twb-tabs .twb-tab-content .slick-prev, .slider-card  .slick-prev {
         left: 0;
     }
     
@@ -3396,6 +3396,7 @@ margin-top: 40px;
     overflow-y: scroll;
         padding-left: 5px;
         padding-right: 5px;
+            overflow-y: hidden;
     }
     
     .side-right .new-box {
@@ -6282,6 +6283,10 @@ background-repeat: no-repeat;
 .cart--header .cart-counter{
     font-size: 20px;
 color: rgba(0, 117, 191, 255);
+}
+.cart--header .cart-empty{
+        font-size: 20px;
+color: rgba(221, 28, 51, 255);
 }
 .cart--header .delivery{
     margin-left: auto;

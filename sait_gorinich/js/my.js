@@ -240,7 +240,7 @@ $('.j-cart-many-info-slider').slick({
     
     
       
-       $('.tab-slider').slick({
+       $('.slider-card').slick({
         dots: false
         , speed: 300
         , slidesToShow: 4
