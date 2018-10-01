@@ -3536,8 +3536,10 @@ margin-top: 40px;
     transform: translateX(-50%);
     margin-top: 30px;
     display: flex;
-        top: 40px;
+        top: 120px;
 }
+
+
 .switch-box label:hover{
     color: #ff8a01;
     cursor: pointer;
@@ -4091,7 +4093,9 @@ display: flex;
     .news .switch-box {
     right: 0px;
     left: auto;
+        top:40px;
 }
+    
     
     .news-slider-box {
     margin-top: 40px;

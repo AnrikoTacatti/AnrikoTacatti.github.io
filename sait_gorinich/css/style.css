@@ -3211,7 +3211,7 @@ div.drop-down-list__tab_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 40px; }
+  top: 120px; }
 
 .switch-box label:hover {
   color: #ff8a01;
@@ -3655,7 +3655,8 @@ div.drop-down-list__tab_content {
     padding-top: 40px; }
   .news .switch-box {
     right: 0px;
-    left: auto; }
+    left: auto;
+    top: 40px; }
   .news-slider-box {
     margin-top: 40px;
     max-width: 890px;
