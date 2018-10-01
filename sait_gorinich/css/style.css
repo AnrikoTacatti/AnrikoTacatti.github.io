@@ -1691,8 +1691,17 @@ div.drop-down-list__tab_content {
 @media (min-width: 767px) and (max-width: 1400px) {
   .menu .logo img {
     max-height: 115px; }
+  .header .header__head {
+    font-size: 56px; }
+  .header .header_price {
+    margin-top: 55px;
+    margin-bottom: 20px; }
+  .header .header-front__slider__content__box-ifo__box-ifo-img {
+    width: 400px;
+    height: 400px; }
   .header .header-front__slider-content {
-    margin-top: 220px; } }
+    margin-top: 220px;
+    margin-bottom: 110px; } }
 
 /* .search-form----------------------------------------------------------------*/
 .search-form {
