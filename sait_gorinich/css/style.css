@@ -1693,6 +1693,11 @@ div.drop-down-list__tab_content {
   transition: all .5s; }
 
 @media (min-width: 767px) and (max-width: 1400px) {
+  .menu__menu-box__scroll-menu__list__item {
+    font-size: 21px; }
+  .menu__menu-box__scroll-menu.opened {
+    height: 100vh;
+    min-height: 800px; }
   .menu .logo img {
     max-height: 115px; }
   .header .header__head {

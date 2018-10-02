@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/slick.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     
     
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <title>trillo &mdash; Your all-in-one booking app</title>
+    <title>ГОРЫНЫЧ</title>
     
 </head>
 
@@ -125,11 +125,11 @@
           Цена
           <div class="drop-down-list__tab_content">
                 <div class="range-box">
-                <input type="number" step="100" id="filter-rage-number1"> <span> ‒ </span>
+                <input type="number" step="100" class="filter-rage-number1"> <span> ‒ </span>
                 
-                <input type="number" step="100"  id="filter-rage-number2">
+                <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div id="filter-rage" class="filter-rage"></div></div>
+                  <div  class="filter-rage j-filter-rage"></div></div>
               
           </div>
           
@@ -268,11 +268,11 @@
           Цена
           <div class="drop-down-list__tab_content">
                 <div class="range-box">
-                <input type="number" step="100" id="filter-rage-number1"> <span> ‒ </span>
+                <input type="number" step="100" class="filter-rage-number1"> <span> ‒ </span>
                 
-                <input type="number" step="100"  id="filter-rage-number2">
+                <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div id="filter-rage" class="filter-rage"></div></div>
+                  <div  class="filter-rage j-filter-rage"></div></div>
               
           </div>
           
@@ -1367,9 +1367,9 @@
       /*-------range-----------*/
 
 
-var html5Slider = document.getElementById('filter-rage'); 
-    
- noUiSlider.create(html5Slider, {
+var html5Slider = $('.j-filter-rage'); 
+ html5Slider.each(function( i, val ) {   
+ noUiSlider.create(val, {
     start: [9000, 56000],
     connect: true, // Display a colored bar between the handles
      step:1,
@@ -1381,31 +1381,36 @@ var html5Slider = document.getElementById('filter-rage');
         'max': 120000
     }
 });   
-    
-var inputNumber1 = document.getElementById('filter-rage-number1');
+ });
+var inputNumber1 = $('.filter-rage-number1');
 // Append the option elements
-var inputNumber2 = document.getElementById('filter-rage-number2');
+var inputNumber2 = $('.filter-rage-number2');
 
-html5Slider.noUiSlider.on('update', function (values, handle) {
+html5Slider.each(function( i, val ) { val.noUiSlider.on('update', function (values, handle) {
 
 
    
     
     if (handle) {
-        inputNumber2.value = ~~values[handle];
+        inputNumber2.val = ~~values[handle];
        
     } else {
         
-         inputNumber1.value = ~~values[handle];
+         inputNumber1.val = ~~values[handle];
     }
 });
-
-inputNumber1.addEventListener('change', function () {
-    html5Slider.noUiSlider.set([this.value, null]);
+});
+inputNumber1.change( function () {
+    html5Slider.each(function( i, val ) { 
+    
+    val.noUiSlider.set([this.value, null]);
+    });
 });
 
-inputNumber2.addEventListener('change', function () {
-    html5Slider.noUiSlider.set([null, this.value]);
+inputNumber2.change(function () {
+     html5Slider.each(function( i, val ) { 
+    val.noUiSlider.set([null, this.value]);
+     });
 });  
     
     
