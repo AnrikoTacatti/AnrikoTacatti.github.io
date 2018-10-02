@@ -181,9 +181,13 @@ body {
     width: 100%; }
   .listing-settings .drop-down-list {
     display: block;
-    visibility: hidden; }
+    height: 0;
+    overflow-y: hidden; }
+  .side-left .range-box {
+    display: none; }
   .listing-settings .drop-down-list.opened {
     margin-top: 20px;
+    height: auto;
     visibility: visible; } }
 
 @media screen and (max-width: 1200px) {
@@ -1695,10 +1699,14 @@ div.drop-down-list__tab_content {
     font-size: 56px; }
   .header .header_price {
     margin-top: 55px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 46px; }
+  .header_price .discount {
+    font-size: 34px;
+    line-height: 1; }
   .header .header-front__slider__content__box-ifo__box-ifo-img {
-    width: 400px;
-    height: 400px; }
+    width: 390px;
+    height: 390px; }
   .header .header-front__slider-content {
     margin-top: 220px;
     margin-bottom: 110px; } }
@@ -3815,6 +3823,10 @@ div.drop-down-list__tab_content {
     display: block; }
   .search-form__input-search {
     font-size: 16px; }
+  /*--------------- . .breadcrumb----------------*/
+  .breadcrumb {
+    margin-top: 40px;
+    margin-bottom: 10px; }
   /*--------------- ..header----------------*/
   .card {
     width: calc(100% - 40px); }
@@ -4141,6 +4153,15 @@ form.opened + .bg {
 
 .form-contact {
   width: 480px; }
+
+@media (max-width: 1400px) and (min-width: 767px) {
+  .form-contact {
+    max-width: 420px;
+    padding: 45px 0; }
+  .form-contact textarea.textarea {
+    height: 80px; }
+  .form-contact .form-head {
+    margin-bottom: 30px; } }
 
 .form-found-cheaper {
   z-index: 10001; }

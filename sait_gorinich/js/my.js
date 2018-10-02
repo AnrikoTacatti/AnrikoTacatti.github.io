@@ -403,12 +403,15 @@ $('.certificates__slider').slick({
       
     });
      $(".j-btn-form-contact").click(function (e) {
-
+         var top = $(window).scrollTop() + $(window).height()/2;
         $(".j-form-contact").addClass("opened");
-      
+         if( ($(window).width() < 769) ) {
+             if($(window).height() < 600) {top = top + 70;}
+        $(".j-form-contact").css({"position" :"absolute","top":top})
+         }
     });
   
-     
+   
     
      $("form").submit(function (e) {
        
@@ -575,7 +578,7 @@ $('[data-fancybox="gallery"]').fancybox({});
            $(".j-table-castom-box").mCustomScrollbar({axis:"x",advanced:{ updateOnSelectorChange: "string" } });
        }}); 
     
-   
+    
         
 });
 
