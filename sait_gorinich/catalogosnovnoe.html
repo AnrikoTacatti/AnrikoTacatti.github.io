@@ -125,11 +125,11 @@
           Цена
           <div class="drop-down-list__tab_content">
                 <div class="range-box">
-                <input type="number" step="100" id="filter-rage-number1"> <span> ‒ </span>
+                <input type="number" step="100" class="filter-rage-number1"> <span> ‒ </span>
                 
-                <input type="number" step="100"  id="filter-rage-number2">
+                <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div id="filter-rage" class="filter-rage"></div></div>
+                  <div id="j-filter-rage" class="filter-rage j-filter-rage"></div></div>
               
           </div>
           
@@ -138,10 +138,10 @@
              Бренд
               <ul class="drop-down-list__tab_content" >
                <li ><div class="checkbox-round-box">
-           <input id="cb1" class="" type="checkbox">
+           
            <label  for="cb1"></label></div> Ametista</li>
                <li><div class="checkbox-round-box">
-           <input id="cb1" class="" type="checkbox">
+          
            <label  for="cb1"></label>
              </div>Bianco Carrara</li>
                <li>Bottocino</li>
@@ -318,11 +318,11 @@
           Цена
           <div class="drop-down-list__tab_content">
                 <div class="range-box">
-                <input type="number" step="100" id="filter-rage-number1"> <span> ‒ </span>
+                <input type="number" step="100" class="filter-rage-number1"> <span> ‒ </span>
                 
-                <input type="number" step="100"  id="filter-rage-number2">
+                <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div id="filter-rage" class="filter-rage"></div></div>
+                  <div id="j-filter-rage-mob" class="filter-rage j-filter-rage"></div></div>
               
           </div>
           
@@ -1066,13 +1066,28 @@
     <script src="js/jquery.fancybox.min.js"></script>
      <script src="js/nouislider.min.js"></script>
     <script src="js/my.js"></script>
-    <script>
+ <script>
       /*-------range-----------*/
 
 
-var html5Slider = document.getElementById('filter-rage'); 
-    
- noUiSlider.create(html5Slider, {
+var html5Slider = document.getElementById("j-filter-rage"); 
+ var html5Slidermob = document.getElementById("j-filter-rage-mob");       
+       
+      
+   noUiSlider.create(html5Slider, {
+    start: [9000, 56000],
+    connect: true, // Display a colored bar between the handles
+     step:1,
+     margin:10000,
+     //pips: {mode: 'count', values: 2,density: 111000},
+     
+    range: {
+        'min': 9000,
+        'max': 120000
+    }
+});      
+ 
+ noUiSlider.create(html5Slidermob, {
     start: [9000, 56000],
     connect: true, // Display a colored bar between the handles
      step:1,
@@ -1084,10 +1099,10 @@ var html5Slider = document.getElementById('filter-rage');
         'max': 120000
     }
 });   
-    
-var inputNumber1 = document.getElementById('filter-rage-number1');
+
+var inputNumber1 = $('.filter-rage-number1');
 // Append the option elements
-var inputNumber2 = document.getElementById('filter-rage-number2');
+var inputNumber2 = $('.filter-rage-number2');
 
 html5Slider.noUiSlider.on('update', function (values, handle) {
 
@@ -1095,20 +1110,34 @@ html5Slider.noUiSlider.on('update', function (values, handle) {
    
     
     if (handle) {
-        inputNumber2.value = ~~values[handle];
+        inputNumber2.val(~~values[handle]);
        
     } else {
         
-         inputNumber1.value = ~~values[handle];
+         inputNumber1.val(~~values[handle]);
     }
 });
+html5Slidermob.noUiSlider.on('update', function (values, handle) {
 
+
+   
+    
+    if (handle) {
+        inputNumber2.val(~~values[handle]);
+       
+    } else {
+        
+         inputNumber1.val(~~values[handle]);
+    }
+});
 inputNumber1.addEventListener('change', function () {
     html5Slider.noUiSlider.set([this.value, null]);
+    html5Slidermob.noUiSlider.set([this.value, null]);
 });
 
 inputNumber2.addEventListener('change', function () {
     html5Slider.noUiSlider.set([null, this.value]);
+     html5Slidermob.noUiSlider.set([null, this.value]);
 });  
     
     

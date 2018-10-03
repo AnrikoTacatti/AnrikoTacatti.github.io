@@ -129,7 +129,7 @@
                 
                 <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div  class="filter-rage j-filter-rage"></div></div>
+                  <div id="j-filter-rage" class="filter-rage j-filter-rage"></div></div>
               
           </div>
           
@@ -272,7 +272,7 @@
                 
                 <input type="number" step="100"  class="filter-rage-number2">
                 
-                  <div  class="filter-rage j-filter-rage"></div></div>
+                  <div id="j-filter-rage-mob" class="filter-rage j-filter-rage-mob"></div></div>
               
           </div>
           
@@ -1363,13 +1363,28 @@
     <script src="js/jquery.fancybox.min.js"></script>
      <script src="js/nouislider.min.js"></script>
     <script src="js/my.js"></script>
-    <script>
+   <script>
       /*-------range-----------*/
 
 
-var html5Slider = $('.j-filter-rage'); 
- html5Slider.each(function( i, val ) {   
- noUiSlider.create(val, {
+var html5Slider = document.getElementById("j-filter-rage"); 
+ var html5Slidermob = document.getElementById("j-filter-rage-mob");       
+       
+      
+   noUiSlider.create(html5Slider, {
+    start: [9000, 56000],
+    connect: true, // Display a colored bar between the handles
+     step:1,
+     margin:10000,
+     //pips: {mode: 'count', values: 2,density: 111000},
+     
+    range: {
+        'min': 9000,
+        'max': 120000
+    }
+});      
+ 
+ noUiSlider.create(html5Slidermob, {
     start: [9000, 56000],
     connect: true, // Display a colored bar between the handles
      step:1,
@@ -1381,36 +1396,46 @@ var html5Slider = $('.j-filter-rage');
         'max': 120000
     }
 });   
- });
+
 var inputNumber1 = $('.filter-rage-number1');
 // Append the option elements
 var inputNumber2 = $('.filter-rage-number2');
 
-html5Slider.each(function( i, val ) { val.noUiSlider.on('update', function (values, handle) {
+html5Slider.noUiSlider.on('update', function (values, handle) {
 
 
    
     
     if (handle) {
-        inputNumber2.val = ~~values[handle];
+        inputNumber2.val(~~values[handle]);
        
     } else {
         
-         inputNumber1.val = ~~values[handle];
+         inputNumber1.val(~~values[handle]);
     }
 });
-});
-inputNumber1.change( function () {
-    html5Slider.each(function( i, val ) { 
+html5Slidermob.noUiSlider.on('update', function (values, handle) {
+
+
+   
     
-    val.noUiSlider.set([this.value, null]);
-    });
+    if (handle) {
+        inputNumber2.val(~~values[handle]);
+       
+    } else {
+        
+         inputNumber1.val(~~values[handle]);
+    }
 });
 
-inputNumber2.change(function () {
-     html5Slider.each(function( i, val ) { 
-    val.noUiSlider.set([null, this.value]);
-     });
+inputNumber1.addEventListener('change', function () {
+    html5Slider.noUiSlider.set([this.value, null]);
+    html5Slidermob.noUiSlider.set([this.value, null]);
+});
+
+inputNumber2.addEventListener('change', function () {
+    html5Slider.noUiSlider.set([null, this.value]);
+     html5Slidermob.noUiSlider.set([null, this.value]);
 });  
     
     
