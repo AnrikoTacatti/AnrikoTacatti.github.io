@@ -15,8 +15,8 @@ Grey dark 1: #333
 Grey dark 2: #777
 Grey dark 3: #999
 
-*/
 
+*/
 @font-face {
   font-family: "MyriadPro-Regular";
   src: url(../fonts/MyriadPro-Regular.eot);
@@ -4230,7 +4230,8 @@ form.opened + .bg {
   padding: 5px 10px;
   margin-bottom: 20px;
   width: 100%;
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-size: 16px; }
 
 .form-comments textarea.textarea {
   height: 160px; }
