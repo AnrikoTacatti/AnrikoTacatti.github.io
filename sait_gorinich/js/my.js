@@ -223,7 +223,7 @@ $('.j-cart-many-info-slider').slick({
               }
             },
             {
-              breakpoint: 50,
+              breakpoint: 500,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
