@@ -5819,7 +5819,8 @@ form.opened + .bg {
   padding-left: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin: 0; }
+  margin: 0;
+  padding-left: 25px; }
 
 .list li {
   margin-top: 15px;
