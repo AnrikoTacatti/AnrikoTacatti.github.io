@@ -16,6 +16,7 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+
 @font-face {
   font-family: "MyriadPro-Regular";
   src: url(../fonts/MyriadPro-Regular.eot);
@@ -4157,7 +4158,8 @@ form.opened + .bg {
 
 .form input:not([type="checkbox"]), textarea.textarea {
   background: #fff0;
-  border-bottom: 1px solid #171616a3; }
+  border-bottom: 1px solid #171616a3;
+  font-size: 16px; }
 
 .form textarea.textarea {
   height: 100px;
@@ -4292,7 +4294,8 @@ form.opened + .bg {
     width: 280px;
     padding: 45px 0; }
   .form-found-cheaper .btn, .form input:not([type="checkbox"]), .textarea.textarea {
-    width: 260px; }
+    width: 260px;
+    font-size: 16px; }
   .form-head {
     font-size: 22px;
     max-width: 260px;
@@ -5994,4 +5997,3 @@ form.opened + .bg {
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 100px; } }
-

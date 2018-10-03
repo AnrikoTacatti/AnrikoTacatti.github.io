@@ -4818,6 +4818,7 @@ form.opened+.bg {
 .form input:not([type="checkbox"]),  textarea.textarea{
     background: #fff0;
     border-bottom: 1px solid #171616a3;
+    font-size: 16px;
     
 }
 .form textarea.textarea{
@@ -4988,7 +4989,9 @@ display: none;
     
     .form-found-cheaper .btn, .form input:not([type="checkbox"]),.textarea.textarea {
     width: 260px;
+          font-size: 16px;
 }
+    
   .form-head {
     font-size: 22px;
     max-width: 260px;
