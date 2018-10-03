@@ -5261,11 +5261,13 @@ form.opened + .bg {
   .baner-col {
     float: right;
     clear: right;
-    width: 50%; }
+    width: 50%;
+    width: 155px; }
   .baner-col:first-of-type {
     float: left;
     clear: left;
-    text-align: center; }
+    text-align: center;
+    width: 145px; }
   .baner-col:first-of-type img {
     width: 120px; }
   .baner-header-accent {
