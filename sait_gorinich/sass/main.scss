@@ -835,7 +835,7 @@ div.drop-down-list__tab_content{
 
 .drop-down-list__tab_content li.active{
     font-weight: 700;
-    color: #000;
+    color: #ff8a01;
     font-family: "BebasNeuebold";
 }
 .drop-down-filter .drop-down-list__tab_content li.active:after{
@@ -5065,7 +5065,7 @@ display: none;
     margin-bottom: 30px;
     padding-bottom: 20px;
 }
-.cart-many-info .listing-settings{
+.side-right .listing-settings{
     height: 0;
 }
 
@@ -5284,7 +5284,7 @@ opacity:0.1;
 
 }
 @media (max-width: 1200px){
-    .cart-many-info .listing-settings{
+    .side-right .listing-settings{
     height: 40px;
    justify-content: flex-start;
         margin-bottom: 15px;

@@ -353,7 +353,7 @@ $('.certificates__slider').slick({
     
   
      $(".drop-down-list__tab_content").find("li").click(function (e) {
-         //$(e.target).parent(".drop-down-list__tab_content").find("li").removeClass("active");
+         $(e.target).parents(".drop-down-list").not(".drop-down-filter").find(".drop-down-list__tab_content>li").removeClass("active");
           $(e.target).toggleClass("active") ;
          
      });
@@ -416,6 +416,8 @@ $('.certificates__slider').slick({
      $("form").submit(function (e) {
        
          if(!$(this).hasClass("search-form") && !$(this).hasClass("form-comments") ){
+             $(this).removeClass("opened");
+             
            $("#message-send-ok").addClass("opened");
 
          }
