@@ -189,10 +189,21 @@
           margin: 0 auto; } }
           .our-team .slick-next {
           transform: translateY(-246%);
+          right: -15px; }
+          .our-team .slick-prev {
+          transform: translateY(-246%);
+          left: -15px; }
+        @media only screen and (max-width: 1200px) {
+             .our-team .slick-next {
+          transform: translateY(-246%);
           right: 23px; }
           .our-team .slick-prev {
           transform: translateY(-246%);
-          left: 10px; }
+          left: 23px; }
+     
+        }
+        
+        
           .our-team__header {
           max-width: 800px;
           display: block;
@@ -216,7 +227,9 @@
           font-weight: 400; }
           .our-team__slider__item__img {
           max-width: 276px;
-          max-height: 300px; }
+          max-height: 300px;
+        margin: auto;
+        }
           @media only screen and (max-width: 768px) {
           .our-team__slider__item__img {
           padding-left: 0;
@@ -227,7 +240,7 @@
           font-family: "BebasNeueBold";
           font-size: 24px;
           letter-spacing: 1.8px;
-          padding-right: calc(100% - 275px);
+        
           padding-top: 30px;
           padding-bottom: 20px; }
           @media only screen and (max-width: 768px) {
@@ -275,7 +288,9 @@
           max-height: 255px;
           height: 255px;
           max-width: 280px;
-          min-width: 171px; }
+          min-width: 171px;
+        margin: auto;
+        }
           @media only screen and (max-width: 768px) {
           .certificates__slider__item {
           padding-left: 0;
