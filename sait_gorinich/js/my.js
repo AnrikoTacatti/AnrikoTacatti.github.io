@@ -457,8 +457,18 @@ $('.certificates__slider').slick({
     $(".j-card").addClass("card-list");
  });
     
+       $(".close-content").click(function(){
+           $(this).parents(".card").remove();
+           
+ });
+    
+    
+  
+    
  
-     
+    
+    
+    
      //menu scroll yakora# скрол по якорям
     $(".totop").on("click", function (event) {
         //отменяем стандартную обработку нажатия по ссылке

@@ -5518,13 +5518,16 @@ form.opened + .bg {
   margin-right: 100px; }
 
 .comparison-box .btn-reset {
-  margin-top: 22px;
+  margin-top: 20px;
   width: 230px;
   padding-left: 80px;
   text-decoration: underline;
   text-align: center;
   height: auto;
   line-height: inherit; }
+.comparison-box .btn-reset:after {
+    top: 25%;}
+
 
 .comparison-box .twb-tablist li a.btn-reset:hover {
   color: #ff5858; }
@@ -5795,7 +5798,9 @@ form.opened + .bg {
   border: 1px solid #7a7a7a;
   text-align: center;
   line-height: 38px;
-  padding-right: 20px; }
+  padding-right: 20px; 
+text-decoration: none;
+}
 
 .cart--header .btn-reset:after {
   right: 30px; }
