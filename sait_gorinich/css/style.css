@@ -2843,6 +2843,7 @@ div.drop-down-list__tab_content {
   z-index: 1;
   opacity: 1; }
 
+
 .container {
   width: 1360px;
   margin-left: auto;
@@ -2851,7 +2852,9 @@ div.drop-down-list__tab_content {
 .products-btn {
   display: block;
   margin: auto;
-  margin-top: -45px; }
+  margin-top: -45px;
+z-index: 2;
+}
 
 /*.consultation-----------------------------------------------------------------------*/
 .consultation {
