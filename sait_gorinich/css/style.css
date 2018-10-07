@@ -4997,6 +4997,9 @@ form.opened + .bg {
     text-align: center; }
   .card-list-ifo-box-specification {
     text-align: center; }
+ .card.card-list .card-ico-box i {
+        top: 7px;}
+    
   .card-list .card__title {
     margin-top: 25px; }
   .card-list .product-count {
