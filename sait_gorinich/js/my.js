@@ -65,7 +65,9 @@ $(document).ready(function () {
         , speed: 300
         , slidesToShow: 3
         , slidesToScroll: 1
+        ,swipeToSlide:true
         ,touchThreshold:50
+        ,TouchMove:true
              ,responsive: [{
             breakpoint: 1200,
             settings: {
@@ -105,6 +107,7 @@ $(document).ready(function () {
         , speed: 300
         , slidesToShow: 6
         ,touchThreshold:50
+        ,swipeToSlide:true
         , slidesToScroll: 1
               ,responsive: [{
             breakpoint: 1200,
@@ -134,6 +137,7 @@ $(document).ready(function () {
         , speed: 300
         , slidesToShow: 4
         ,touchThreshold:50
+        ,swipeToSlide:true
         , slidesToScroll: 1
             ,responsive: [{
             breakpoint: 1200,
@@ -173,6 +177,7 @@ $('.j-cart-many-info-slider').slick({
   focusOnSelect: true,
   centerPadding: '0px',
   touchThreshold:50,
+ swipeToSlide:true,
    responsive: [{
             breakpoint: 1200,
             settings: {
@@ -212,6 +217,7 @@ $('.j-cart-many-info-slider').slick({
           centerMode: true,
           focusOnSelect: true,
            touchThreshold:50,
+            swipeToSlide:true,
            responsive: [
             {
               breakpoint: 1100,
@@ -250,6 +256,7 @@ $('.j-cart-many-info-slider').slick({
         , speed: 300
         , slidesToShow: 4
         ,touchThreshold:50
+        ,swipeToSlide:true
         , slidesToScroll: 1
             ,responsive: [{
             breakpoint: 1200,
@@ -282,6 +289,7 @@ $('.j-cart-many-info-slider').slick({
           centerPadding: '0px',
           focusOnSelect: true,
           touchThreshold:50,
+          swipeToSlide:true,
            infinite: true,
            centerPadding: 15,
            responsive: [
@@ -317,6 +325,7 @@ $('.certificates__slider').slick({
         slidesToScroll: 1,
         dots: false,
       touchThreshold:50,
+      swipeToSlide:true,
      centerPadding: '0px',
         centerMode: true,
         /*centerMode: true,
