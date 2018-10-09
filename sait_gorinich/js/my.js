@@ -65,6 +65,7 @@ $(document).ready(function () {
         , speed: 300
         , slidesToShow: 3
         , slidesToScroll: 1
+        ,touchThreshold:50
              ,responsive: [{
             breakpoint: 1200,
             settings: {
@@ -103,6 +104,7 @@ $(document).ready(function () {
         dots: false
         , speed: 300
         , slidesToShow: 6
+        ,touchThreshold:50
         , slidesToScroll: 1
               ,responsive: [{
             breakpoint: 1200,
@@ -244,6 +246,7 @@ $('.j-cart-many-info-slider').slick({
         dots: false
         , speed: 300
         , slidesToShow: 4
+        ,touchThreshold:50
         , slidesToScroll: 1
             ,responsive: [{
             breakpoint: 1200,
@@ -309,6 +312,7 @@ $('.certificates__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
+      touchThreshold:50,
      centerPadding: '0px',
         centerMode: true,
         /*centerMode: true,
