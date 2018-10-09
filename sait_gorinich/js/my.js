@@ -133,6 +133,7 @@ $(document).ready(function () {
         dots: false
         , speed: 300
         , slidesToShow: 4
+        ,touchThreshold:50
         , slidesToScroll: 1
             ,responsive: [{
             breakpoint: 1200,
@@ -171,6 +172,7 @@ $('.j-cart-many-info-slider').slick({
   centerMode: true,
   focusOnSelect: true,
   centerPadding: '0px',
+  touchThreshold:50,
    responsive: [{
             breakpoint: 1200,
             settings: {
@@ -209,6 +211,7 @@ $('.j-cart-many-info-slider').slick({
           dots: false,
           centerMode: true,
           focusOnSelect: true,
+           touchThreshold:50,
            responsive: [
             {
               breakpoint: 1100,
@@ -278,6 +281,7 @@ $('.j-cart-many-info-slider').slick({
           centerMode: true,
           centerPadding: '0px',
           focusOnSelect: true,
+          touchThreshold:50,
            infinite: true,
            centerPadding: 15,
            responsive: [
