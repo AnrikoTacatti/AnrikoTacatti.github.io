@@ -1,0 +1,76 @@
+doctype html
+html
+  head(lang="ru")
+    include metatags.pug
+    title Тестовое задание FunBox
+    include styles.pug
+  body
+   section.section
+    .container
+      .h2 Ты сегодня покормил кота?
+      .catalog__list
+       
+
+           .catalog__item
+            
+            .cart
+              .cart__top
+                .cart__defoult-hover Котэ не одобряет?
+                .cart__defoult-hover-hide Сказочное заморское яство
+              .cart__title Нямушка
+              .cart__description с фуа-гра
+              .cart__bonus <span class="bold">10</span> порций
+              .cart__bonus мышь в подарок
+              .cat__weight.circle
+                .circle__num 0,5
+                .circle__text кг
+              img(src="images/cart-img.png" alt="").cat__img
+            .cart__text
+              .cart__text-defoult Чего сидишь? Порадуй котэ,
+                a(href="#").cart__link  купи.
+              .cart__text-selected Головы щучьи с чесноком да свежайшая сёмгушка.
+              .cart__text-disabled Печалька, с курой закончился.
+       
+
+           .catalog__item
+          
+            .cart.cart__selected
+              .cart__top
+                .cart__defoult-hover Котэ не одобряет?
+                .cart__defoult-hover-hide Сказочное заморское яство
+              .cart__title Нямушка
+              .cart__description с рыбой
+              .cart__bonus <span class="bold">40</span> порций
+              .cart__bonus <span class="bold">2</span> мыши в подарок
+              .cat__weight.circle
+                .circle__num 2
+                .circle__text кг
+              img(src="images/cart-img.png" alt="").cat__img
+            .cart__text
+              .cart__text-defoult Чего сидишь? Порадуй котэ,
+                a(href="#").cart__link  купи.
+              .cart__text-selected Головы щучьи с чесноком да свежайшая сёмгушка.
+              .cart__text-disabled Печалька, с курой закончился.
+        
+
+           .catalog__item
+           
+            .cart.cart__disabled
+              .cart__top
+                .cart__defoult-hover Котэ не одобряет?
+                .cart__defoult-hover-hide Сказочное заморское яство
+              .cart__title Нямушка
+              .cart__description с курой
+              .cart__bonus <span class="bold">100</span> порций
+              .cart__bonus <span class="bold">5</span> мышей в подарок
+              .cart__bonus заказчик доволен
+              .cat__weight.circle
+                .circle__num 5
+                .circle__text кг
+              img(src="images/cart-img.png" alt="").cat__img
+            .cart__text
+              .cart__text-defoult Чего сидишь? Порадуй котэ,
+                a(href="#").cart__link  купи.
+              .cart__text-selected Головы щучьи с чесноком да свежайшая сёмгушка.
+              .cart__text-disabled Печалька, с курой закончился.
+  include scripts.pug
