@@ -108,31 +108,31 @@ HTML/CSS верстка
  
  мои работы верстка 
  
- https://www.stena.ru/
+ https://www.stena.ru/ Адаптивный интернет-магази верстка
  
- https://antarra.ru/
+ https://antarra.ru/ Верстка
  
  верстка и програмная часть
  
- https://anrikotacatti.github.io/sait_gorinich/
+ https://anrikotacatti.github.io/sait_gorinich/ Адаптивный интернет-магази 
  
- https://github.com/AnrikoTacatti/AnrikoTacatti.github
+ https://github.com/AnrikoTacatti/AnrikoTacatti.github.io/tree/master/sait_gorinich
  
- http://autka.ru/
+ http://autka.ru/ Полноэкранный лендинг  Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://orbita-style.by/index.html
+ http://orbita-style.by/index.html Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- https://verally.by/landing/index.html
+ https://verally.by/landing/index.html Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://english-sun.by
+ http://english-sun.by Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://genrich.ru/maining/#
+ http://genrich.ru/maining/# Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://genrich.ru/angl/index2.html#
+ http://genrich.ru/angl/index2.html# Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://genrich.ru/potolki/index.html
+ http://genrich.ru/potolki/index.html Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://genrich.ru/repairs/index.html
+ http://genrich.ru/repairs/index.html Полноэкранный лендинг  Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
- http://genrich.ru/repairs/index2.html#section_3
+ http://genrich.ru/repairs/index2.html#section_3 Полноэкранный лендинг  Адаптивно, кроссбраузерно, валидно. верстка и отправка почты
  
