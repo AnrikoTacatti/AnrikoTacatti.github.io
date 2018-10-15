@@ -1,9 +1,13 @@
-    Паульс Генрих Сергеевич
+Паульс Генрих Сергеевич
 
-    Дата рождения: 4.12.1993
-    Город: Севастополь
-    Моб. телефон: +7 (978) 040-92-94
-    E-mail: anriko.tacatti@gmail.com
+Дата рождения: 4.12.1993
+
+Город: Севастополь
+
+Моб. телефон: +7 (978) 040-92-
+
+E-mail: anriko.tacatti@gmail.com
+
 
 
 ### Q1
@@ -101,17 +105,31 @@ HTML/CSS верстка
 прошел курсы HTML & CSS3,JavaScript 
  
  Примеры работ 
- мои работы верстка https://www.stena.ru/ 
- https://antarra.ru/ 
- верстка и програмная часть 
- https://anrikotacatti.github.io/sait_gorinich/ 
- https://github.com/AnrikoTacatti/AnrikoTacatti.github.. 
- http://autka.ru/ 
- http://orbita-style.by/index.html 
- https://verally.by/landing/index.html 
- http://english-sun.by 
- http://genrich.ru/maining/# 
- http://genrich.ru/angl/index2.html# 
- http://genrich.ru/potolki/index.html 
- http://genrich.ru/repairs/index.html 
- http://genrich.ru/repairs/index2.html#section_3 
+ мои работы верстка https://www.stena.ru/
+ 
+ https://antarra.ru/
+ 
+ верстка и програмная часть
+ 
+ https://anrikotacatti.github.io/sait_gorinich/
+ 
+ https://github.com/AnrikoTacatti/AnrikoTacatti.github
+ 
+ http://autka.ru/
+ 
+ http://orbita-style.by/index.html
+ 
+ https://verally.by/landing/index.html
+ 
+ http://english-sun.by
+ 
+ http://genrich.ru/maining/#
+ 
+ http://genrich.ru/angl/index2.html#
+ 
+ http://genrich.ru/potolki/index.html
+ 
+ http://genrich.ru/repairs/index.html
+ 
+ http://genrich.ru/repairs/index2.html#section_3
+ 
