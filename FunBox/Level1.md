@@ -105,7 +105,10 @@ HTML/CSS верстка
 прошел курсы HTML & CSS3,JavaScript 
  
  Примеры работ 
- мои работы верстка https://www.stena.ru/
+ 
+ мои работы верстка 
+ 
+ https://www.stena.ru/
  
  https://antarra.ru/
  
