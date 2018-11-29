@@ -101,7 +101,7 @@ jQuery(document).ready(function(){
         
         jQuery(function(){
            function wait_redirect(){
-              window.location.href = "https://anrikotacatti.github.io/siteguarding/en/services/malware-removal-service";
+              window.location.href = "https://anrikotacatti.github.io/siteguarding//en/services/malware-removal-service";
            };
            window.setTimeout( wait_redirect, 2000 );
         });

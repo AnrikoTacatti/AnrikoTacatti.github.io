@@ -19,7 +19,7 @@ $result = Antivirus::Init();
 if ($result !== true) 
 {
     Antivirus::TemplateHeader(true);
-    $result = $result."<br><br>"."If you have Windows server or problems with the permissions.<br>We advice to download full package (<a target=\"_blank\" href=\"https://anrikotacatti.github.io/siteguarding/en/download-service/website-antivirus-standalone-package\">Download</a>)";
+    $result = $result."<br><br>"."If you have Windows server or problems with the permissions.<br>We advice to download full package (<a target=\"_blank\" href=\"https://anrikotacatti.github.io/siteguarding//en/download-service/website-antivirus-standalone-package\">Download</a>)";
     Antivirus::PrintPage_Message($result, 'error');
     Antivirus::TemplateFooter();
     exit;
@@ -236,9 +236,9 @@ class Antivirus {
         if ($remote_assets)
         {
             ?>
-                <link rel="stylesheet" type="text/css" href="https://anrikotacatti.github.io/siteguarding/ext/antivirus/assets/semantic.min.css">
-                <script src="https://anrikotacatti.github.io/siteguarding/ext/antivirus/assets/jquery.min.js"></script>
-                <script src="https://anrikotacatti.github.io/siteguarding/ext/antivirus/assets/semantic.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="https://anrikotacatti.github.io/siteguarding//ext/antivirus/assets/semantic.min.css">
+                <script src="https://anrikotacatti.github.io/siteguarding//ext/antivirus/assets/jquery.min.js"></script>
+                <script src="https://anrikotacatti.github.io/siteguarding//ext/antivirus/assets/semantic.min.js"></script>
             <?php
         }
         else {
@@ -382,16 +382,16 @@ class Antivirus {
                 <div class="ui borderless  fixed menu">
                     <div class="ui container">
                       <div class="header item">
-                        <a href="https://anrikotacatti.github.io/siteguarding">
+                        <a href="https://anrikotacatti.github.io/siteguarding/">
                             <img class="logo" src="<?php echo Antivirus::GetWebsiteURL().Antivirus::$antivirus_assets_folder; ?>logo_siteguarding.png">
                         </a>
                       </div>
         
                           <a href="#" class="item">&nbsp;</a>
-                          <a href="https://anrikotacatti.github.io/siteguarding/en/buy-service/website-antivirus-protection" class="ui right floated dropdown item">Get PRO</a>
-                          <a href="https://anrikotacatti.github.io/siteguarding/en/protect-your-website" class="ui right floated dropdown item">Protect Your Website</a>
-                          <a href="https://anrikotacatti.github.io/siteguarding/en/services/malware-removal-service" class="ui right floated dropdown item">Malware Removal Service</a>
-                          <a href="https://anrikotacatti.github.io/siteguarding/en/contacts" class="ui right floated dropdown item">Contact Us</a>
+                          <a href="https://anrikotacatti.github.io/siteguarding//en/buy-service/website-antivirus-protection" class="ui right floated dropdown item">Get PRO</a>
+                          <a href="https://anrikotacatti.github.io/siteguarding//en/protect-your-website" class="ui right floated dropdown item">Protect Your Website</a>
+                          <a href="https://anrikotacatti.github.io/siteguarding//en/services/malware-removal-service" class="ui right floated dropdown item">Malware Removal Service</a>
+                          <a href="https://anrikotacatti.github.io/siteguarding//en/contacts" class="ui right floated dropdown item">Contact Us</a>
                           
         
                     </div>
@@ -425,21 +425,21 @@ class Antivirus {
     	else $txt = '<span class="ui green label">'.ucwords($txt).'<span>';
     	?>
         <p class="item">Your subscription: <b><?php echo $txt; ?></b> valid till: <?php echo $license_info['exp_date']."&nbsp;&nbsp;"; 
-        if ($license_info['exp_date'] < date("Y-m-d")) echo '<span class="ui red label">'.'Expired'.'</span> [<a href="https://anrikotacatti.github.io/siteguarding/en/buy-service/antivirus-site-protection?domain='.urlencode( self::GetWebsiteURL() ).'&email='.urlencode($license_info['email']).'" target="_blank">Upgrade</a>]';
+        if ($license_info['exp_date'] < date("Y-m-d")) echo '<span class="ui red label">'.'Expired'.'</span> [<a href="https://anrikotacatti.github.io/siteguarding//en/buy-service/antivirus-site-protection?domain='.urlencode( self::GetWebsiteURL() ).'&email='.urlencode($license_info['email']).'" target="_blank">Upgrade</a>]';
         else if ($license_info['exp_date'] < date("Y-m-d", mktime(0, 0, 0, date("m")  , date("d")-7, date("Y")))) echo '<span class="msg_box msg_warning">'.'Will Expire Soon'.'</span>';
         ?></p>
 
     </div>
     
     <div class="ui list">
-        <p class="item">Google Blacklist Status: <?php if ($license_info['blacklist']['google'] != 'ok') echo '<span class="ui red label">Blacklisted ['.$license_info['blacklist']['google'].']</span> [<a href="https://anrikotacatti.github.io/siteguarding/en/services/malware-removal-service" target="_blank">Remove From Blacklist</a>]'; else echo '<span class="ui green label">Not blacklisted</span>'; ?></p>
-        <p class="item">File Change Monitoring: <?php if ($license_info['filemonitoring']['status'] == 0) echo '<span class="ui red label">Disabled</span> [<a href="https://anrikotacatti.github.io/siteguarding/en/protect-your-website" target="_blank">Subscribe</a>]'; else echo '<b>'.$license_info['filemonitoring']['plan'].'</b> ['.$license_info['filemonitoring']['exp_date'].']'; ?></p>
+        <p class="item">Google Blacklist Status: <?php if ($license_info['blacklist']['google'] != 'ok') echo '<span class="ui red label">Blacklisted ['.$license_info['blacklist']['google'].']</span> [<a href="https://anrikotacatti.github.io/siteguarding//en/services/malware-removal-service" target="_blank">Remove From Blacklist</a>]'; else echo '<span class="ui green label">Not blacklisted</span>'; ?></p>
+        <p class="item">File Change Monitoring: <?php if ($license_info['filemonitoring']['status'] == 0) echo '<span class="ui red label">Disabled</span> [<a href="https://anrikotacatti.github.io/siteguarding//en/protect-your-website" target="_blank">Subscribe</a>]'; else echo '<b>'.$license_info['filemonitoring']['plan'].'</b> ['.$license_info['filemonitoring']['exp_date'].']'; ?></p>
         <?php
         if (count($license_info['reports']) > 0) 
         {
             if ($license_info['last_scan_files_counters']['main'] == 0 && $license_info['last_scan_files_counters']['heuristic'] == 0) echo '<p class="item">Website Status: <span class="ui green label">Clean</span></p>';
-            if ($license_info['last_scan_files_counters']['main'] > 0) echo '<p class="item">Website Status: <span class="ui red label">Infected</span> [<a href="https://anrikotacatti.github.io/siteguarding/en/services/malware-removal-service" target="_blank">Clean My Website</a>]</p>';
-            else if ($license_info['last_scan_files_counters']['heuristic'] > 0)  echo '<p class="item">Website Status: <span class="ui red label">Review is required</span> [<a href="https://anrikotacatti.github.io/siteguarding/en/services/malware-removal-service" target="_blank">Review My Website</a>]</p>';
+            if ($license_info['last_scan_files_counters']['main'] > 0) echo '<p class="item">Website Status: <span class="ui red label">Infected</span> [<a href="https://anrikotacatti.github.io/siteguarding//en/services/malware-removal-service" target="_blank">Clean My Website</a>]</p>';
+            else if ($license_info['last_scan_files_counters']['heuristic'] > 0)  echo '<p class="item">Website Status: <span class="ui red label">Review is required</span> [<a href="https://anrikotacatti.github.io/siteguarding//en/services/malware-removal-service" target="_blank">Review My Website</a>]</p>';
         }
         else {
             echo '<p class="item">Website Status: <span class="ui red label">Never Analyzed</span></p>';
@@ -500,7 +500,7 @@ if (count($license_info['reports']))
 
 <iframe src="https://player.vimeo.com/video/140200465" width="100%" height="378" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<form style="padding: 40px 0 100px 0;" class="ui middle aligned center aligned grid" method="post" action="https://anrikotacatti.github.io/siteguarding/en/protect-your-website">
+<form style="padding: 40px 0 100px 0;" class="ui middle aligned center aligned grid" method="post" action="https://anrikotacatti.github.io/siteguarding//en/protect-your-website">
 
 		  <input type="submit" name="submit" class="big ui green button center aligned" value="Protect My Website">
 
@@ -514,13 +514,13 @@ if (count($license_info['reports']))
         <div class="center aligned row">
         <div style="text-align:center">
     		<p>
-    		For more information and details about Antivirus Site Protection please <a target="_blank" href="https://anrikotacatti.github.io/siteguarding/en/antivirus-site-protection">click here</a>.<br /><br />
+    		For more information and details about Antivirus Site Protection please <a target="_blank" href="https://anrikotacatti.github.io/siteguarding//en/antivirus-site-protection">click here</a>.<br /><br />
     		<a href="http://www.siteguarding.com/livechat/index.html" target="_blank">
-    			<img src="https://anrikotacatti.github.io/siteguarding/images/livechat.png"/>
+    			<img src="https://anrikotacatti.github.io/siteguarding//images/livechat.png"/>
     		</a><br />
-    		For any questions and support please use LiveChat or this <a href="https://anrikotacatti.github.io/siteguarding/en/contacts" rel="nofollow" target="_blank" title="SiteGuarding.com - Website Security. Professional security services against hacker activity. Daily website file scanning and file changes monitoring. Malware detecting and removal.">contact form</a>.<br>
+    		For any questions and support please use LiveChat or this <a href="https://anrikotacatti.github.io/siteguarding//en/contacts" rel="nofollow" target="_blank" title="SiteGuarding.com - Website Security. Professional security services against hacker activity. Daily website file scanning and file changes monitoring. Malware detecting and removal.">contact form</a>.<br>
     		<br>
-    		Copyright &copy; 2008 - <?php echo date("Y"); ?> <a href="https://anrikotacatti.github.io/siteguarding/" target="_blank">SiteGuarding.com</a></br>Website Security. Professional security services against hacker activity.<br />
+    		Copyright &copy; 2008 - <?php echo date("Y"); ?> <a href="https://anrikotacatti.github.io/siteguarding//" target="_blank">SiteGuarding.com</a></br>Website Security. Professional security services against hacker activity.<br />
     		</p>
         </div>
         </div>
@@ -554,7 +554,7 @@ if (count($license_info['reports']))
             
             <div class="ui middle aligned center aligned grid">
                 <div class="container">
-                    <div class="ui yellow message" style="text-align: center;">If the scanning process takes too long. Get the results using the link<br /><a href="https://anrikotacatti.github.io/siteguarding/antivirus/viewreport?report_id=<?php echo $session_report_key; ?>&showtrial=1" target="_blank">https://anrikotacatti.github.io/siteguarding/antivirus/viewreport?report_id=<?php echo $session_report_key; ?></a></div>
+                    <div class="ui yellow message" style="text-align: center;">If the scanning process takes too long. Get the results using the link<br /><a href="https://anrikotacatti.github.io/siteguarding//antivirus/viewreport?report_id=<?php echo $session_report_key; ?>&showtrial=1" target="_blank">https://anrikotacatti.github.io/siteguarding//antivirus/viewreport?report_id=<?php echo $session_report_key; ?></a></div>
                 </div>
             </div>
                 <h2 class="ui header aligned center aligned">Please wait. It can take up to 5 - 10 minutes to get the results.</h2>
@@ -618,7 +618,7 @@ if (count($license_info['reports']))
 						function(data){
 							if (data == 'report_redirect') 
 							{
-								document.location.href = 'https://anrikotacatti.github.io/siteguarding/antivirus/viewreport?report_id=<?php echo $session_report_key; ?>&showtrial=1';
+								document.location.href = 'https://anrikotacatti.github.io/siteguarding//antivirus/viewreport?report_id=<?php echo $session_report_key; ?>&showtrial=1';
 								return;
 							}
 						    var tmp_data = data.split('|');

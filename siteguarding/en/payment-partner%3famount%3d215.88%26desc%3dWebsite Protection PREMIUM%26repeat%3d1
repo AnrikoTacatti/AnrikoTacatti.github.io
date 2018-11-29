@@ -31,9 +31,9 @@ jQuery.noConflict();
 				<input type="hidden" name="currency_code" value="">
 				<input type="hidden" name="item_name" value="Website Protection PREMIUM "/>
 				
-				<input type="hidden" name="notify_url" value="https://anrikotacatti.github.io/siteguarding//index.php?option=com_securapp&amp;task=ExtentionServiceCheck_PayPal&amp;lang=en"/>
-				<input type="hidden" name="cancel_return" value="https://anrikotacatti.github.io/siteguarding//en/payment-message?page=error">
-				<input type="hidden" name="return" value="https://anrikotacatti.github.io/siteguarding//en/payment-message?page=paid">
+				<input type="hidden" name="notify_url" value="https://anrikotacatti.github.io/siteguarding///index.php?option=com_securapp&amp;task=ExtentionServiceCheck_PayPal&amp;lang=en"/>
+				<input type="hidden" name="cancel_return" value="https://anrikotacatti.github.io/siteguarding///en/payment-message?page=error">
+				<input type="hidden" name="return" value="https://anrikotacatti.github.io/siteguarding///en/payment-message?page=paid">
 	            
 	            <input type="hidden" name="image_url" value=""/>
 	            
