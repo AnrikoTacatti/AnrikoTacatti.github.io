@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="shortcut icon" href="https://anrikotacatti.github.io/siteguarding/images/icons/link.png">
+<meta charset="utf-8" />
+<script src="/_office/js/jquery-1.10.1.min.js"></script>
+<script src="/_office/js/beautify.js"></script>
+</head>
+<body>
+<style>
+#htmlblock_inner{max-width: 100%;overflow-x:visible;word-wrap: break-word!important;word-wrap:break-word; overflow-wrap: break-word; white-space:pre-wrap;word-wrap:break-word; overflow-wrap: break-word; white-space:pre-line;}
+.error{color:red;font-weight: bold;}
+.red_alert{color: #D8000C;background-color: #FFBABA;}
+.highlight_1{color:white;font-weight: bold;background-color:red;}
+.selected .selected{background-color: #ffc7ce; color:#de4206; font-weight: bold;}
+.small_txt {padding:0; font-size:10px}
+h5{margin:5px 0;}
+.line_page_sep{color:red; height:15px;border-color:red;background-color:red}
+</style>
+
+<link href="themes/_js.css?ver=2" rel="stylesheet" type="text/css" media="screen">
+
+<p class="red_alert" style="padding: 5px 10px;">При анализе делайте 2 проверки: Scripts и Other Links</p>
+
+<form method="post">
+<table width="100%">
+<tr>
+	<td>Link(s):<br><textarea style="width:60%; height:80px" name="url"></textarea></td>
+ </tr>
+ <tr>
+	<td>Quick commands: 
+        <select name="action">
+            <option selected value="">Scripts</option>
+            <option  value="otherlinks">other links</option>
+            <option  value="findlinks">find links</option>
+        </select>
+        <select name="multilink">
+            <option  value="1">Multilink = 1</option>
+<option  value="2">Multilink = 2</option>
+<option selected value="3">Multilink = 3</option>
+<option  value="4">Multilink = 4</option>
+<option  value="5">Multilink = 5</option>
+        </select>
+    </td>
+</tr>
+<tr>
+	<td>
+        <input type="submit" value="Check" />
+    </td>
+</tr>
+</table>
+</form>
+
+<p class="small_txt">Total analyzed links: 0</p>
