@@ -5,7 +5,7 @@ $(document).ready(function () {
    $('.j-header-front__slider').slick({
         dots: false
         , speed: 300
-        , slidesToShow: 1
+        , slidesToShow: 2
         , slidesToScroll: 1
         , vertical: true
     });
