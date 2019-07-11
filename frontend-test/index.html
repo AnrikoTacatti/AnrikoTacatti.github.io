@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touchicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0099da">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/header-main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="header__top">
+        <div class="wrap header__wrap">
+          <button class="header__hamburger"><span class="header__hamburger-top"></span><span class="header__hamburger-middle"></span><span class="header__hamburger-bottom"></span></button>
+          <nav class="header__nav"><a class="header__nav-link" href="#personal-info">Личная информация   </a><a class="header__nav-link" href="#skills">Опыт</a><a class="header__nav-link" href="#js-level">JavaScript </a><a class="header__nav-link" href="#about-me">О себе                                                                </a></nav>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="wrap header__content-wrap">
+          <p class="header__content-title">Анкета</p>
+        </div>
+      </div>
+    </header>
+    <section class="personal-info wrap" id="personal-info"><img class="section-icon" src="./img/anketa-icon.png" alt="">
+      <p class="section-title">Личная информация</p>
+      <form action="">
+        <input type="tel" required placeholder="ФИО">
+        <select placeholder="Паульс Генрих Сергеевич">
+          <option value="" disabled selected hidden>1993</option>
+          <option value="">1994</option>
+          <option value="">1995</option>
+        </select>
+        <input type="text" required placeholder="Крым">
+        <input type="text" required placeholder="andrew.pauls7">
+        <input type="text" required placeholder="anriko.tacatti@gmail.com">
+      </form>
+    </section>
+    <section class="skills wrap" id="skills"><img class="section-icon" src="./img/list-icon.png" alt="">
+      <p class="section-title">Расскажите о своем опыте</p>
+      <div class="skills-wrap">
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch0" id="ch0" type="checkbox" checked>
+          <label for="ch0">							</label>БЭМ/OOCSS
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch1" id="ch1" type="checkbox" checked>
+          <label for="ch1">							</label>Верстаю семантично
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch2" id="ch2" type="checkbox" checked>
+          <label for="ch2">							</label>Webpack
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch3" id="ch3" type="checkbox" checked>
+          <label for="ch3">							</label>Stylus/LESS/SASS
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch4" id="ch4" type="checkbox" checked>
+          <label for="ch4">							</label>ES2015/ES2016
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch5" id="ch5" type="checkbox" checked>
+          <label for="ch5">							</label>jQuery
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch6" id="ch6" type="checkbox" checked>
+          <label for="ch6">							</label>Работаю с SVG
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch7" id="ch7" type="checkbox" checked>
+          <label for="ch7">							</label>Gulp/GRUNT
+        </div>
+        <div class="checkbox-box cell">
+          <input class="styled-checkbox" name="ch8" id="ch8" type="checkbox" checked>
+          <label for="ch8">							</label>Ипользую Git
+        </div>
+      </div>
+    </section>
+    <section class="js-level wrap" id="js-level"><img class="section-icon" src="./img/js-icon.png" alt="">
+      <p class="section-title">Уровень владения JavaScript</p>
+      <div class="nouirange-box">
+        <p class="nouirange-box__text"> <span>1</span> Не владею</p>
+        <p class="nouirange-box__text"> <span>2</span> Использую готовые <br> решения</p>
+        <p class="nouirange-box__text"> <span>3</span> Использую готовые решения <br> и умею и переделывать</p>
+        <p class="nouirange-box__text"> <span>4</span> Пишу сложный JS с нуля</p>
+        <div class="nouirange" id="slider1"></div>
+      </div>
+    </section>
+    <section class="about-me wrap" id="about-me"><img class="section-icon" src="./img/info-icon.png" alt="">
+      <p class="section-title about-me-title">Расскажите о себе</p>
+      <p class="about-me-subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+      <div class="about-me-info">
+        Я хотел бы работать на интересных длительных проектах с использованием актуальных технологий.  Для меня ценно работать в команде, участвовать в проектах с использованием актуальных технологий, иметь возможность обучения с целью повышения квалификации. 
+         Эти аспекты умножают мое желание учиться и развиваться в техническом направлении.
+         Не маловажными факторами являются: рост ЗП в соответствии с уровнем квалификации. 
+      </div>
+      <button class="btn">Готово</button>
+    </section>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
